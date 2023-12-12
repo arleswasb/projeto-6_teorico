@@ -1,0 +1,14 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity MUX_1bit is
+    Port (S : in STD_LOGIC;
+          I0, I1 : in STD_LOGIC;
+          O : out STD_LOGIC
+    );
+end MUX_1bit;
+
+architecture Main of MUX_1bit is
+begin
+    O <= ((I0 and not(S)) or (I1 and S));
+end Main;
