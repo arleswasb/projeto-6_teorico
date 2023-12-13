@@ -2,9 +2,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 entity FIFO is
 	port(SW: in std_logic_vector (15 downto 0); -- ESTRADA DE DADOS
-			PNTEIRO: in std_logic_vector (3 downto 0); -- ENDERECAMENTO DO PONTEIRO
 			WR,RD,CLR,CK: in std_logic; -- ENTRADAS
-			HEX0,HEX1,HEX2,HEX3: out std_logic_vector (6 downto 0); -- SAIDA PARA OS DISPLAY DE 7 SEGMENTOS
+			BCD: out STD_LOGIC_VECTOR(15 downto 0); 
 			EM,FU: out std_logic); -- SINAIS DE EMPTY E FULL DA PILHA 
 end FIFO;
 
@@ -41,12 +40,10 @@ COMPONENT bin_bcd_16BITS is
 	    bcd: out std_logic_vector (15 downto 0));
 end COMPONENT;
 
-COMPONENT seg7 is
-	port(X: in std_logic_vector (3 downto 0);
-		  H: out std_logic_vector (6 downto 0));
-end COMPONENT;
 
-signal BIN,BCD: std_logic_vector(15 downto 0);
+
+signal BIN: std_logic_vector(15 downto 0);
+
 signal PONTEIRO: std_logic_vector(3 downto 0);
 signal INT_LD0,INT_LD1,INT_LD2,INT_LD3,INT_LD4,INT_LD5,INT_LD6,INT_LD7,INT_LD8,INT_LD9,INT_LD10,INT_LD11,INT_LD12,INT_LD13,INT_LD14,INT_LD15: STD_LOGIC; -- SINAIS INTERNOS DA SAIDA DO DEMUX DE 16 CANAIS DE 1 BIT
 signal INT_P1,INT_P2,INT_P3,INT_P4,INT_P5,INT_P6,INT_P7,INT_P8,INT_P9,INT_P10,INT_P11,INT_P12,INT_P13,INT_P14,INT_P15,INT_P16: std_logic_vector(15 downto 0);--SINAIS INTERNOS DA SAIDA DO MUX DE 16 CANAIS DE 16 BITS
@@ -94,12 +91,6 @@ REG016: REGISTRADOR_LD_16BITS PORT MAP (SW,INT_LD15,CLR,CK,INT_P16);
 
 BIN_BCD: bin_bcd_16BITS PORT MAP (BIN,BCD);
 
-----------------------------------------------------------------------------------------------------------------------
----SAIDA DO SINAL PARA OS DISPLAY DE 7 SEGMENTOS
 
-HEX03: seg7 PORT MAP (BCD(15 DOWNTO 12),HEX3);
-HEX02: seg7 PORT MAP (BCD(11 DOWNTO 8),HEX2);
-HEX01: seg7 PORT MAP (BCD(7 DOWNTO 4),HEX1);
-HEX00: seg7 PORT MAP (BCD(3 DOWNTO 0),HEX0);
 
 end ckt;
