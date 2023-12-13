@@ -1,0 +1,38 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Registrador_16_bits is
+   Port ( up, dw,clr,ck : in STD_LOGIC;
+         	S: out std_logic_vector(3 downto 0);
+				EM,FU : OUT STD_LOGIC);
+end Registrador_16_bits;
+
+architecture ckt of Registrador_16_bits is
+
+component ffjk is
+   port (ck, clr, set, j, k : in  std_logic;
+                          q : out std_logic);
+end component;
+
+COMPONENT ffd is
+   port (ck, clr, set, d : in  std_logic;
+                       q : out std_logic);
+end COMPONENT;
+
+component MUX_1bit is
+    Port (S : in STD_LOGIC;
+          I0, I1 : in STD_LOGIC;
+          O : out STD_LOGIC
+    );
+end component;
+
+--------------------------------------------------------------------
+
+
+
+begin
+
+
+
+
+end ckt;

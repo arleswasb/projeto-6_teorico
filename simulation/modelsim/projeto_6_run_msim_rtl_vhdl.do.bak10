@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffd.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Registrador_16_bits.vhd}
+

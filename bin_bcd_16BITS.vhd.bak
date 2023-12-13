@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity bin_bcd_16BITS is
+	port(SW: in std_logic_vector (15 downto 0);
+	    bcd: out std_logic_vector (19 downto 0));
+end bin_bcd_16BITS;
+
+architecture ckt of bin_bcd_16BITS is
+
+entity ADD3 is
+	port(A: in std_logic_vector (3 downto 0);
+	     S: out std_logic_vector (3 downto 0));
+end ADD3;
+
+signal Z1, Z2, Z3, Z4, Z5, Z6, Z7: std_logic_vector(3 downto 0);
+signal W1, W2, W3, W4, W5, W6, W7: std_logic_vector(3 downto 0);
+
+begin
+
+W1 <= '0' & SW(7 downto 5);
+W2 <= Z1(2 downto 0) & SW(4);
+W3 <= Z2(2 downto 0) & SW(3);
+W4 <= '0' & Z1(3) & Z2(3) & Z3(3);
+W5 <= Z3(2 downto 0) & SW(2);
+W6 <= Z4(2 downto 0) & Z5(3);
+W7 <= Z5(2 downto 0) & SW(1);
+
+U1: addc port map (W1,Z1);
+U2: addc port map (W2,Z2);
+U3: addc port map (W3,Z3);
+U4: addc port map (W4,Z4);
+U5: addc port map (W5,Z5);
+U6: addc port map (W6,Z6);
+U7: addc port map (W7,Z7);
+
+bcd(11) <= '0';
+bcd(10) <= '0';

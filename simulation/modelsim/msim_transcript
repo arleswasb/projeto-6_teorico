@@ -1,0 +1,316 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do projeto_6_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffjk.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ffjk
+# -- Compiling architecture logica of ffjk
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffd.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ffd
+# -- Compiling architecture logica of ffd
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/contador_up_dw_4_bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity contador_up_dw_4_bits
+# -- Compiling architecture ckt of contador_up_dw_4_bits
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MUX_1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX_1bit
+# -- Compiling architecture Main of MUX_1bit
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Registrador_16_bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_16_bits
+# -- Compiling architecture ckt of Registrador_16_bits
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/mux_2x1_16BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_2x1_16BITS
+# -- Compiling architecture ckt of mux_2x1_16BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/REGISTRADOR_LD_16BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REGISTRADOR_LD_16BITS
+# -- Compiling architecture ckt of REGISTRADOR_LD_16BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ADD3.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADD3
+# -- Compiling architecture ckt of ADD3
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bin_bcd_16BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bin_bcd_16BITS
+# -- Compiling architecture ckt of bin_bcd_16BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/seg7.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seg7
+# -- Compiling architecture ckt of seg7
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Multiplexer16To1_16_BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Multiplexer16To1_16_BITS
+# -- Compiling architecture Main of Multiplexer16To1_16_BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Demux_1x16.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Demux_1x16
+# -- Compiling architecture ckt of Demux_1x16
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/FIFO.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FIFO
+# -- Compiling architecture ckt of FIFO
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MAIN.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAIN
+# -- Compiling architecture ckt of MAIN
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bnt_sincrono.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bnt_sincrono
+# -- Compiling architecture ckt of bnt_sincrono
+# 
+vsim +altera -do projeto_6_run_msim_rtl_vhdl.do -l msim_transcript -gui work.main
+# vsim +altera -do projeto_6_run_msim_rtl_vhdl.do -l msim_transcript -gui work.main 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.main(ckt)
+# Loading work.fifo(ckt)
+# Loading work.contador_up_dw_4_bits(ckt)
+# Loading work.ffjk(logica)
+# Loading work.mux_1bit(main)
+# Loading work.ffd(logica)
+# Loading work.demux_1x16(ckt)
+# Loading work.multiplexer16to1_16_bits(main)
+# Loading work.mux_2x1_16bits(ckt)
+# Loading work.registrador_ld_16bits(ckt)
+# Loading work.registrador_16_bits(ckt)
+# Loading work.bin_bcd_16bits(ckt)
+# Loading work.add3(ckt)
+# Loading work.seg7(ckt)
+# Loading work.bnt_sincrono(ckt)
+# do projeto_6_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffjk.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ffjk
+# -- Compiling architecture logica of ffjk
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffd.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ffd
+# -- Compiling architecture logica of ffd
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/contador_up_dw_4_bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity contador_up_dw_4_bits
+# -- Compiling architecture ckt of contador_up_dw_4_bits
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MUX_1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX_1bit
+# -- Compiling architecture Main of MUX_1bit
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Registrador_16_bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registrador_16_bits
+# -- Compiling architecture ckt of Registrador_16_bits
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/mux_2x1_16BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_2x1_16BITS
+# -- Compiling architecture ckt of mux_2x1_16BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/REGISTRADOR_LD_16BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REGISTRADOR_LD_16BITS
+# -- Compiling architecture ckt of REGISTRADOR_LD_16BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ADD3.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADD3
+# -- Compiling architecture ckt of ADD3
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bin_bcd_16BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bin_bcd_16BITS
+# -- Compiling architecture ckt of bin_bcd_16BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/seg7.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seg7
+# -- Compiling architecture ckt of seg7
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Multiplexer16To1_16_BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Multiplexer16To1_16_BITS
+# -- Compiling architecture Main of Multiplexer16To1_16_BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Demux_1x16.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Demux_1x16
+# -- Compiling architecture ckt of Demux_1x16
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/FIFO.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FIFO
+# -- Compiling architecture ckt of FIFO
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MAIN.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAIN
+# -- Compiling architecture ckt of MAIN
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bnt_sincrono.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bnt_sincrono
+# -- Compiling architecture ckt of bnt_sincrono
+# 
+add wave -position insertpoint sim:/main/*
+add wave -position insertpoint sim:/main/fifo00/*
+add wave -position insertpoint sim:/main/bnt_wr/*
+add wave -position insertpoint sim:/main/bnt_rd/*
+add wave -position insertpoint sim:/main/HEX03/*
+add wave -position insertpoint sim:/main/HEX02/*
+add wave -position insertpoint sim:/main/HEX01/*
+add wave -position insertpoint sim:/main/HEX00/*
+force -freeze sim:/main/SW 0000010101010101 0
+force -freeze sim:/main/WR 0 0
+force -freeze sim:/main/RD 0 0
+force -freeze sim:/main/CK 1 0, 0 {15 ps} -r 30
+force -freeze sim:/main/CLR 1 0
+run
+force -freeze sim:/main/CLR 0 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW 0000011111010101 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+force -freeze sim:/main/SW 0000010101111101 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+run
+run
+force -freeze sim:/main/RD 1 0
+run
+force -freeze sim:/main/RD 0 0
+run
+run
+force -freeze sim:/main/RD 1 0
+run
+force -freeze sim:/main/RD 0 0
+run
+run
+run
+force -freeze sim:/main/RD 1 0
+run
+run
+run
+run
+force -freeze sim:/main/RD 0 0
+run
+force -freeze sim:/main/RD 1 0
+run
+run
+run
+force -freeze sim:/main/WR 1 0
+force -freeze sim:/main/RD 0 0
+run
+run
+force -freeze sim:/main/RD 0 0
+force -freeze sim:/main/WR 0 0
+force -freeze sim:/main/CLR 1 0
+run
+# WARNING: No extended dataflow license exists
+run

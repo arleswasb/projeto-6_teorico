@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity FIFO is
+	port(SW: in std_logic_vector (15 downto 0);
+			PNTEIRO: in std_logic_vector (3 downto 0);
+			WR,RD,CLR,CK in std_logic;
+		  HEX0,HEX1,HEX2,HEX3: out std_logic_vector (6 downto 0));
+end FIFO;
+
+architecture ckt of FIFO is
+
+COMPONENT Demux_1x16 is -- entrada de valor teste para saida por moeda
+   Port ( WT: in std_logic;
+			PONTEIRO:  in std_logic_vector(3 downto 0);
+         LD0,LD1,LD2,LD3,LD4,LD5,LD6,LD7,LD8,LD9,LD10,LD11,LD12,LD13,LD14,LD15: out std_logic);
+end COMPONENT;
+
+
+signal BIN: std_logic_vector(15 downto 0);
+
+begin
+U1: seg7 port map(Q(3 downto 0),HEX0);
+U2: seg7 port map(Q(7 downto 4),HEX1);
+U3: seg7 port map(Q(11 downto 8),HEX2);
+U4: seg7 port map(Q(15 downto 12),HEX3);
+U5: bin_bcd_16BITS port map(SW,Q);
+
+end ckt;

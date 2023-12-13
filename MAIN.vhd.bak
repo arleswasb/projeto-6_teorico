@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MAIN is
+	port(	SW: in std_logic_vector (15 downto 0);
+			WR,RD,CLK,CLR: in std_logic;
+			EM,FU: out std_logic;
+			HEX0,HEX1,HEX2,HEX3: out std_logic_vector (6 downto 0); -- SAIDA PARA OS DISPLAY DE 7 SEGMENTOS
+end MAIN;
+
+architecture ckt of MAIN is
+
+signal a, b, c, d: std_logic;
+
+begin
+
+
+
+end ckt;

@@ -1,0 +1,1371 @@
+TimeQuest Timing Analyzer report for projeto_6
+Wed Dec 13 16:05:09 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'CK'
+ 12. Slow Model Hold: 'CK'
+ 13. Slow Model Minimum Pulse Width: 'CK'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'CK'
+ 24. Fast Model Hold: 'CK'
+ 25. Fast Model Minimum Pulse Width: 'CK'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; projeto_6                                                         ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; CK         ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CK }  ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 338.64 MHz ; 338.64 MHz      ; CK         ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; CK    ; -1.953 ; -232.274      ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CK    ; 0.391 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; CK    ; -1.380 ; -138.380              ;
++-------+--------+-----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'CK'                                                                                                                                                                                               ;
++--------+----------------------------------------------------+----------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                          ; To Node                                                                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------------------+----------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.986      ;
+; -1.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.986      ;
+; -1.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.986      ;
+; -1.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.986      ;
+; -1.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.986      ;
+; -1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.983      ;
+; -1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.983      ;
+; -1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.983      ;
+; -1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.983      ;
+; -1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.983      ;
+; -1.944 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; -0.001     ; 2.979      ;
+; -1.944 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; -0.001     ; 2.979      ;
+; -1.944 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; -0.001     ; 2.979      ;
+; -1.944 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; -0.001     ; 2.979      ;
+; -1.939 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.976      ;
+; -1.939 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.003      ; 2.978      ;
+; -1.939 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.976      ;
+; -1.939 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.976      ;
+; -1.939 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.976      ;
+; -1.939 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.976      ;
+; -1.939 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.976      ;
+; -1.939 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.003      ; 2.978      ;
+; -1.939 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.976      ;
+; -1.939 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.976      ;
+; -1.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.969      ;
+; -1.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.969      ;
+; -1.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.969      ;
+; -1.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.969      ;
+; -1.919 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.003      ; 2.958      ;
+; -1.918 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.955      ;
+; -1.918 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.955      ;
+; -1.918 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.955      ;
+; -1.918 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.955      ;
+; -1.918 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.955      ;
+; -1.915 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.978      ;
+; -1.915 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.978      ;
+; -1.915 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.978      ;
+; -1.915 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.978      ;
+; -1.915 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.978      ;
+; -1.915 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.978      ;
+; -1.915 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.978      ;
+; -1.915 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.978      ;
+; -1.906 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.005      ; 2.947      ;
+; -1.906 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; 0.005      ; 2.947      ;
+; -1.906 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; 0.005      ; 2.947      ;
+; -1.906 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.005      ; 2.947      ;
+; -1.906 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; 0.005      ; 2.947      ;
+; -1.906 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; 0.005      ; 2.947      ;
+; -1.899 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.936      ;
+; -1.899 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.936      ;
+; -1.899 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.936      ;
+; -1.899 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.936      ;
+; -1.899 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.936      ;
+; -1.899 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.936      ;
+; -1.899 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.936      ;
+; -1.899 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.936      ;
+; -1.887 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.950      ;
+; -1.887 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.950      ;
+; -1.887 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.950      ;
+; -1.887 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.950      ;
+; -1.887 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.950      ;
+; -1.887 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.950      ;
+; -1.887 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.950      ;
+; -1.887 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.950      ;
+; -1.883 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.916      ;
+; -1.883 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.916      ;
+; -1.883 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.916      ;
+; -1.883 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.916      ;
+; -1.883 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.916      ;
+; -1.880 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.913      ;
+; -1.880 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.913      ;
+; -1.880 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.913      ;
+; -1.880 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.913      ;
+; -1.880 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; -0.003     ; 2.913      ;
+; -1.874 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; -0.001     ; 2.909      ;
+; -1.874 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; -0.001     ; 2.909      ;
+; -1.874 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; -0.001     ; 2.909      ;
+; -1.874 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; -0.001     ; 2.909      ;
+; -1.869 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.906      ;
+; -1.869 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.003      ; 2.908      ;
+; -1.869 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.906      ;
+; -1.869 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.906      ;
+; -1.869 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.906      ;
+; -1.869 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.906      ;
+; -1.869 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.906      ;
+; -1.869 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.003      ; 2.908      ;
+; -1.869 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.906      ;
+; -1.869 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.906      ;
+; -1.862 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.899      ;
+; -1.862 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.899      ;
+; -1.862 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.899      ;
+; -1.862 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.899      ;
+; -1.849 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.003      ; 2.888      ;
+; -1.848 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.885      ;
+; -1.848 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.885      ;
+; -1.848 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.885      ;
+; -1.848 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.885      ;
+; -1.848 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.001      ; 2.885      ;
+; -1.845 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.908      ;
+; -1.845 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; 0.027      ; 2.908      ;
++--------+----------------------------------------------------+----------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'CK'                                                                                                                                                                                               ;
++-------+----------------------------------------------------+----------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                          ; To Node                                                                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------------------------+----------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q   ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q                                 ; CK           ; CK          ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 0.657      ;
+; 0.551 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; bnt_sincrono:bnt_rd|ffd:FFD2|q                                                   ; CK           ; CK          ; 0.000        ; 0.000      ; 0.817      ;
+; 0.664 ; bnt_sincrono:bnt_wr|ffd:FFD1|q                     ; bnt_sincrono:bnt_wr|ffd:FFD2|q                                                   ; CK           ; CK          ; 0.000        ; 0.000      ; 0.930      ;
+; 0.875 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 1.141      ;
+; 0.958 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q                                 ; CK           ; CK          ; 0.000        ; 0.000      ; 1.224      ;
+; 1.193 ; bnt_sincrono:bnt_rd|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q                                 ; CK           ; CK          ; 0.000        ; 0.000      ; 1.459      ;
+; 1.213 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q                                 ; CK           ; CK          ; 0.000        ; 0.005      ; 1.484      ;
+; 1.254 ; bnt_sincrono:bnt_wr|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q                                 ; CK           ; CK          ; 0.000        ; 0.005      ; 1.525      ;
+; 1.550 ; bnt_sincrono:bnt_rd|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS                               ; CK           ; CK          ; 0.000        ; -0.005     ; 1.811      ;
+; 1.552 ; bnt_sincrono:bnt_rd|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                               ; CK           ; CK          ; 0.000        ; -0.005     ; 1.813      ;
+; 1.568 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 1.834      ;
+; 1.637 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS                               ; CK           ; CK          ; 0.000        ; -0.005     ; 1.898      ;
+; 1.644 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                               ; CK           ; CK          ; 0.000        ; -0.005     ; 1.905      ;
+; 1.669 ; bnt_sincrono:bnt_rd|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS                               ; CK           ; CK          ; 0.000        ; -0.005     ; 1.930      ;
+; 1.707 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS                               ; CK           ; CK          ; 0.000        ; -0.005     ; 1.968      ;
+; 1.709 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS                               ; CK           ; CK          ; 0.000        ; -0.005     ; 1.970      ;
+; 1.782 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_15|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.046      ;
+; 1.782 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_13|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.046      ;
+; 1.782 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_10|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.046      ;
+; 1.782 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_07|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.046      ;
+; 1.782 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_03|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.046      ;
+; 1.782 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_02|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.046      ;
+; 1.782 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_01|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.046      ;
+; 1.782 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_00|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.046      ;
+; 1.797 ; bnt_sincrono:bnt_wr|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 2.063      ;
+; 1.799 ; bnt_sincrono:bnt_wr|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 2.065      ;
+; 1.801 ; bnt_sincrono:bnt_wr|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 2.067      ;
+; 1.827 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_13|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.091      ;
+; 1.827 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_07|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.091      ;
+; 1.827 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_03|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.091      ;
+; 1.827 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_02|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.091      ;
+; 1.827 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_01|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.091      ;
+; 1.827 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_00|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.091      ;
+; 1.843 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_13|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.109      ;
+; 1.843 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_09|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.109      ;
+; 1.843 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_08|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.109      ;
+; 1.843 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_07|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.109      ;
+; 1.843 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_04|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.109      ;
+; 1.843 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_03|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.109      ;
+; 1.843 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_02|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.109      ;
+; 1.843 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_01|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.109      ;
+; 1.843 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_00|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.109      ;
+; 1.866 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_13|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.132      ;
+; 1.866 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_09|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.132      ;
+; 1.866 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_08|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.132      ;
+; 1.866 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_07|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.132      ;
+; 1.866 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_04|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.132      ;
+; 1.866 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_03|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.132      ;
+; 1.866 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_02|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.132      ;
+; 1.866 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_01|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.132      ;
+; 1.866 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_00|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.132      ;
+; 1.872 ; bnt_sincrono:bnt_rd|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS                               ; CK           ; CK          ; 0.000        ; -0.005     ; 2.133      ;
+; 1.883 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_13|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.147      ;
+; 1.883 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_07|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.147      ;
+; 1.883 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_03|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.147      ;
+; 1.883 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_02|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.147      ;
+; 1.883 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_01|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.147      ;
+; 1.883 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_00|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.147      ;
+; 1.921 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 2.187      ;
+; 1.923 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 2.189      ;
+; 1.925 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 2.191      ;
+; 1.933 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS                               ; CK           ; CK          ; 0.000        ; 0.000      ; 2.199      ;
+; 1.946 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_13|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.212      ;
+; 1.946 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_09|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.212      ;
+; 1.946 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_08|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.212      ;
+; 1.946 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_07|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.212      ;
+; 1.946 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_04|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.212      ;
+; 1.946 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_03|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.212      ;
+; 1.946 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_02|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.212      ;
+; 1.946 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_01|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.212      ;
+; 1.946 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_00|q  ; CK           ; CK          ; 0.000        ; 0.000      ; 2.212      ;
+; 1.948 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_13|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.212      ;
+; 1.948 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_07|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.212      ;
+; 1.948 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_03|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.212      ;
+; 1.948 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_02|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.212      ;
+; 1.948 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_01|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.212      ;
+; 1.948 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_00|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.212      ;
+; 1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_15|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.214      ;
+; 1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_13|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.214      ;
+; 1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_10|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.214      ;
+; 1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_07|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.214      ;
+; 1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_03|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.214      ;
+; 1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_02|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.214      ;
+; 1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_01|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.214      ;
+; 1.950 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_00|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.214      ;
+; 1.952 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_12|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.216      ;
+; 1.952 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_14|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.216      ;
+; 1.952 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_11|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.216      ;
+; 1.952 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_09|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.216      ;
+; 1.952 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_08|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.216      ;
+; 1.952 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_06|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.216      ;
+; 1.952 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_05|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.216      ;
+; 1.952 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_04|q  ; CK           ; CK          ; 0.000        ; -0.002     ; 2.216      ;
+; 2.037 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 0.000        ; 0.027      ; 2.330      ;
+; 2.037 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 0.000        ; 0.027      ; 2.330      ;
+; 2.037 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 0.000        ; 0.027      ; 2.330      ;
++-------+----------------------------------------------------+----------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CK'                                                                                                                              ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                           ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CK    ; Rise       ; CK                                                                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; RD        ; CK         ; 3.205  ; 3.205  ; Rise       ; CK              ;
+; SW[*]     ; CK         ; 4.492  ; 4.492  ; Rise       ; CK              ;
+;  SW[0]    ; CK         ; 3.893  ; 3.893  ; Rise       ; CK              ;
+;  SW[1]    ; CK         ; 3.814  ; 3.814  ; Rise       ; CK              ;
+;  SW[2]    ; CK         ; 3.598  ; 3.598  ; Rise       ; CK              ;
+;  SW[3]    ; CK         ; 4.167  ; 4.167  ; Rise       ; CK              ;
+;  SW[4]    ; CK         ; 3.541  ; 3.541  ; Rise       ; CK              ;
+;  SW[5]    ; CK         ; 3.809  ; 3.809  ; Rise       ; CK              ;
+;  SW[6]    ; CK         ; 4.045  ; 4.045  ; Rise       ; CK              ;
+;  SW[7]    ; CK         ; 3.811  ; 3.811  ; Rise       ; CK              ;
+;  SW[8]    ; CK         ; 4.369  ; 4.369  ; Rise       ; CK              ;
+;  SW[9]    ; CK         ; 3.856  ; 3.856  ; Rise       ; CK              ;
+;  SW[10]   ; CK         ; 3.929  ; 3.929  ; Rise       ; CK              ;
+;  SW[11]   ; CK         ; 3.854  ; 3.854  ; Rise       ; CK              ;
+;  SW[12]   ; CK         ; 4.492  ; 4.492  ; Rise       ; CK              ;
+;  SW[13]   ; CK         ; -0.308 ; -0.308 ; Rise       ; CK              ;
+;  SW[14]   ; CK         ; 3.889  ; 3.889  ; Rise       ; CK              ;
+;  SW[15]   ; CK         ; -0.006 ; -0.006 ; Rise       ; CK              ;
+; WR        ; CK         ; 3.812  ; 3.812  ; Rise       ; CK              ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; RD        ; CK         ; -2.975 ; -2.975 ; Rise       ; CK              ;
+; SW[*]     ; CK         ; 1.096  ; 1.096  ; Rise       ; CK              ;
+;  SW[0]    ; CK         ; -2.959 ; -2.959 ; Rise       ; CK              ;
+;  SW[1]    ; CK         ; -3.002 ; -3.002 ; Rise       ; CK              ;
+;  SW[2]    ; CK         ; -3.119 ; -3.119 ; Rise       ; CK              ;
+;  SW[3]    ; CK         ; -2.972 ; -2.972 ; Rise       ; CK              ;
+;  SW[4]    ; CK         ; -3.085 ; -3.085 ; Rise       ; CK              ;
+;  SW[5]    ; CK         ; -2.979 ; -2.979 ; Rise       ; CK              ;
+;  SW[6]    ; CK         ; -2.994 ; -2.994 ; Rise       ; CK              ;
+;  SW[7]    ; CK         ; -2.958 ; -2.958 ; Rise       ; CK              ;
+;  SW[8]    ; CK         ; -3.204 ; -3.204 ; Rise       ; CK              ;
+;  SW[9]    ; CK         ; -3.012 ; -3.012 ; Rise       ; CK              ;
+;  SW[10]   ; CK         ; -3.090 ; -3.090 ; Rise       ; CK              ;
+;  SW[11]   ; CK         ; -3.113 ; -3.113 ; Rise       ; CK              ;
+;  SW[12]   ; CK         ; -3.141 ; -3.141 ; Rise       ; CK              ;
+;  SW[13]   ; CK         ; 1.096  ; 1.096  ; Rise       ; CK              ;
+;  SW[14]   ; CK         ; -3.120 ; -3.120 ; Rise       ; CK              ;
+;  SW[15]   ; CK         ; 0.929  ; 0.929  ; Rise       ; CK              ;
+; WR        ; CK         ; -3.582 ; -3.582 ; Rise       ; CK              ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; EM        ; CK         ; 8.916  ; 8.916  ; Rise       ; CK              ;
+; FU        ; CK         ; 8.914  ; 8.914  ; Rise       ; CK              ;
+; HEX0[*]   ; CK         ; 21.872 ; 21.872 ; Rise       ; CK              ;
+;  HEX0[0]  ; CK         ; 21.582 ; 21.582 ; Rise       ; CK              ;
+;  HEX0[1]  ; CK         ; 21.781 ; 21.781 ; Rise       ; CK              ;
+;  HEX0[2]  ; CK         ; 21.540 ; 21.540 ; Rise       ; CK              ;
+;  HEX0[3]  ; CK         ; 21.582 ; 21.582 ; Rise       ; CK              ;
+;  HEX0[4]  ; CK         ; 21.769 ; 21.769 ; Rise       ; CK              ;
+;  HEX0[5]  ; CK         ; 21.826 ; 21.826 ; Rise       ; CK              ;
+;  HEX0[6]  ; CK         ; 21.872 ; 21.872 ; Rise       ; CK              ;
+; HEX1[*]   ; CK         ; 22.294 ; 22.294 ; Rise       ; CK              ;
+;  HEX1[0]  ; CK         ; 22.294 ; 22.294 ; Rise       ; CK              ;
+;  HEX1[1]  ; CK         ; 22.061 ; 22.061 ; Rise       ; CK              ;
+;  HEX1[2]  ; CK         ; 22.271 ; 22.271 ; Rise       ; CK              ;
+;  HEX1[3]  ; CK         ; 22.270 ; 22.270 ; Rise       ; CK              ;
+;  HEX1[4]  ; CK         ; 22.038 ; 22.038 ; Rise       ; CK              ;
+;  HEX1[5]  ; CK         ; 22.279 ; 22.279 ; Rise       ; CK              ;
+;  HEX1[6]  ; CK         ; 22.054 ; 22.054 ; Rise       ; CK              ;
+; HEX2[*]   ; CK         ; 22.301 ; 22.301 ; Rise       ; CK              ;
+;  HEX2[0]  ; CK         ; 22.107 ; 22.107 ; Rise       ; CK              ;
+;  HEX2[1]  ; CK         ; 21.861 ; 21.861 ; Rise       ; CK              ;
+;  HEX2[2]  ; CK         ; 22.301 ; 22.301 ; Rise       ; CK              ;
+;  HEX2[3]  ; CK         ; 21.870 ; 21.870 ; Rise       ; CK              ;
+;  HEX2[4]  ; CK         ; 22.074 ; 22.074 ; Rise       ; CK              ;
+;  HEX2[5]  ; CK         ; 22.112 ; 22.112 ; Rise       ; CK              ;
+;  HEX2[6]  ; CK         ; 22.088 ; 22.088 ; Rise       ; CK              ;
+; HEX3[*]   ; CK         ; 22.407 ; 22.407 ; Rise       ; CK              ;
+;  HEX3[0]  ; CK         ; 22.195 ; 22.195 ; Rise       ; CK              ;
+;  HEX3[1]  ; CK         ; 21.961 ; 21.961 ; Rise       ; CK              ;
+;  HEX3[2]  ; CK         ; 22.194 ; 22.194 ; Rise       ; CK              ;
+;  HEX3[3]  ; CK         ; 21.959 ; 21.959 ; Rise       ; CK              ;
+;  HEX3[4]  ; CK         ; 22.407 ; 22.407 ; Rise       ; CK              ;
+;  HEX3[5]  ; CK         ; 21.986 ; 21.986 ; Rise       ; CK              ;
+;  HEX3[6]  ; CK         ; 21.983 ; 21.983 ; Rise       ; CK              ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; EM        ; CK         ; 7.887  ; 7.887  ; Rise       ; CK              ;
+; FU        ; CK         ; 7.886  ; 7.886  ; Rise       ; CK              ;
+; HEX0[*]   ; CK         ; 8.353  ; 8.353  ; Rise       ; CK              ;
+;  HEX0[0]  ; CK         ; 8.368  ; 8.368  ; Rise       ; CK              ;
+;  HEX0[1]  ; CK         ; 8.595  ; 8.595  ; Rise       ; CK              ;
+;  HEX0[2]  ; CK         ; 8.353  ; 8.353  ; Rise       ; CK              ;
+;  HEX0[3]  ; CK         ; 8.367  ; 8.367  ; Rise       ; CK              ;
+;  HEX0[4]  ; CK         ; 8.583  ; 8.583  ; Rise       ; CK              ;
+;  HEX0[5]  ; CK         ; 8.611  ; 8.611  ; Rise       ; CK              ;
+;  HEX0[6]  ; CK         ; 8.657  ; 8.657  ; Rise       ; CK              ;
+; HEX1[*]   ; CK         ; 9.785  ; 9.785  ; Rise       ; CK              ;
+;  HEX1[0]  ; CK         ; 10.027 ; 10.027 ; Rise       ; CK              ;
+;  HEX1[1]  ; CK         ; 9.826  ; 9.826  ; Rise       ; CK              ;
+;  HEX1[2]  ; CK         ; 10.067 ; 10.067 ; Rise       ; CK              ;
+;  HEX1[3]  ; CK         ; 10.003 ; 10.003 ; Rise       ; CK              ;
+;  HEX1[4]  ; CK         ; 9.847  ; 9.847  ; Rise       ; CK              ;
+;  HEX1[5]  ; CK         ; 10.012 ; 10.012 ; Rise       ; CK              ;
+;  HEX1[6]  ; CK         ; 9.785  ; 9.785  ; Rise       ; CK              ;
+; HEX2[*]   ; CK         ; 10.317 ; 10.317 ; Rise       ; CK              ;
+;  HEX2[0]  ; CK         ; 10.563 ; 10.563 ; Rise       ; CK              ;
+;  HEX2[1]  ; CK         ; 10.317 ; 10.317 ; Rise       ; CK              ;
+;  HEX2[2]  ; CK         ; 10.755 ; 10.755 ; Rise       ; CK              ;
+;  HEX2[3]  ; CK         ; 10.326 ; 10.326 ; Rise       ; CK              ;
+;  HEX2[4]  ; CK         ; 10.527 ; 10.527 ; Rise       ; CK              ;
+;  HEX2[5]  ; CK         ; 10.568 ; 10.568 ; Rise       ; CK              ;
+;  HEX2[6]  ; CK         ; 10.544 ; 10.544 ; Rise       ; CK              ;
+; HEX3[*]   ; CK         ; 11.040 ; 11.040 ; Rise       ; CK              ;
+;  HEX3[0]  ; CK         ; 11.259 ; 11.259 ; Rise       ; CK              ;
+;  HEX3[1]  ; CK         ; 11.040 ; 11.040 ; Rise       ; CK              ;
+;  HEX3[2]  ; CK         ; 11.281 ; 11.281 ; Rise       ; CK              ;
+;  HEX3[3]  ; CK         ; 11.048 ; 11.048 ; Rise       ; CK              ;
+;  HEX3[4]  ; CK         ; 11.459 ; 11.459 ; Rise       ; CK              ;
+;  HEX3[5]  ; CK         ; 11.070 ; 11.070 ; Rise       ; CK              ;
+;  HEX3[6]  ; CK         ; 11.067 ; 11.067 ; Rise       ; CK              ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; CK    ; -0.436 ; -44.679       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CK    ; 0.215 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; CK    ; -1.380 ; -138.380              ;
++-------+--------+-----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'CK'                                                                                                                                                                                               ;
++--------+----------------------------------------------------+----------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                          ; To Node                                                                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------------------+----------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.436 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.469      ;
+; -0.436 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.469      ;
+; -0.436 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.469      ;
+; -0.436 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.469      ;
+; -0.436 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.469      ;
+; -0.436 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.469      ;
+; -0.436 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.469      ;
+; -0.436 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.469      ;
+; -0.435 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.465      ;
+; -0.435 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.465      ;
+; -0.435 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.465      ;
+; -0.435 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.465      ;
+; -0.435 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.465      ;
+; -0.433 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.463      ;
+; -0.433 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.463      ;
+; -0.433 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.463      ;
+; -0.433 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.463      ;
+; -0.433 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.463      ;
+; -0.431 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; -0.001     ; 1.462      ;
+; -0.431 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; -0.001     ; 1.462      ;
+; -0.431 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; -0.001     ; 1.462      ;
+; -0.431 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; -0.001     ; 1.462      ;
+; -0.427 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.003      ; 1.462      ;
+; -0.427 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.003      ; 1.462      ;
+; -0.426 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.459      ;
+; -0.426 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.459      ;
+; -0.426 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.459      ;
+; -0.426 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.459      ;
+; -0.419 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.473      ;
+; -0.419 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.473      ;
+; -0.419 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.473      ;
+; -0.419 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.473      ;
+; -0.419 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.473      ;
+; -0.419 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.473      ;
+; -0.419 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.473      ;
+; -0.419 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.473      ;
+; -0.417 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.003      ; 1.452      ;
+; -0.416 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.449      ;
+; -0.416 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.449      ;
+; -0.416 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.449      ;
+; -0.416 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.449      ;
+; -0.416 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.449      ;
+; -0.415 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.003      ; 1.450      ;
+; -0.415 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; 0.003      ; 1.450      ;
+; -0.415 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; 0.003      ; 1.450      ;
+; -0.415 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.003      ; 1.450      ;
+; -0.415 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; 0.003      ; 1.450      ;
+; -0.415 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; 0.003      ; 1.450      ;
+; -0.410 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.443      ;
+; -0.410 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.443      ;
+; -0.410 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.443      ;
+; -0.410 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.443      ;
+; -0.410 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.443      ;
+; -0.410 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.443      ;
+; -0.410 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.443      ;
+; -0.410 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.443      ;
+; -0.400 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.454      ;
+; -0.400 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.454      ;
+; -0.400 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.454      ;
+; -0.400 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.454      ;
+; -0.400 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.454      ;
+; -0.400 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.454      ;
+; -0.400 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.454      ;
+; -0.400 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.454      ;
+; -0.398 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.431      ;
+; -0.398 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.431      ;
+; -0.398 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.431      ;
+; -0.398 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.431      ;
+; -0.398 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.431      ;
+; -0.398 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.431      ;
+; -0.398 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.431      ;
+; -0.398 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.431      ;
+; -0.397 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.427      ;
+; -0.397 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.427      ;
+; -0.397 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.427      ;
+; -0.397 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.427      ;
+; -0.397 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.427      ;
+; -0.395 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.425      ;
+; -0.395 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.425      ;
+; -0.395 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.425      ;
+; -0.395 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.425      ;
+; -0.395 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; -0.002     ; 1.425      ;
+; -0.393 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 1.000        ; -0.001     ; 1.424      ;
+; -0.393 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 1.000        ; -0.001     ; 1.424      ;
+; -0.393 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 1.000        ; -0.001     ; 1.424      ;
+; -0.393 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 1.000        ; -0.001     ; 1.424      ;
+; -0.389 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 1.000        ; 0.003      ; 1.424      ;
+; -0.389 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 1.000        ; 0.003      ; 1.424      ;
+; -0.388 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.421      ;
+; -0.388 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.421      ;
+; -0.388 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.421      ;
+; -0.388 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 1.000        ; 0.001      ; 1.421      ;
+; -0.381 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.435      ;
+; -0.381 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.435      ;
+; -0.381 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.435      ;
+; -0.381 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.435      ;
+; -0.381 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.435      ;
+; -0.381 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.435      ;
+; -0.381 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.435      ;
+; -0.381 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 1.000        ; 0.022      ; 1.435      ;
++--------+----------------------------------------------------+----------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'CK'                                                                                                                                                                                              ;
++-------+----------------------------------------------------+---------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                          ; To Node                                                                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------------------------+---------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q   ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q                                ; CK           ; CK          ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 0.367      ;
+; 0.275 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; bnt_sincrono:bnt_rd|ffd:FFD2|q                                                  ; CK           ; CK          ; 0.000        ; 0.000      ; 0.427      ;
+; 0.294 ; bnt_sincrono:bnt_wr|ffd:FFD1|q                     ; bnt_sincrono:bnt_wr|ffd:FFD2|q                                                  ; CK           ; CK          ; 0.000        ; 0.000      ; 0.446      ;
+; 0.394 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 0.546      ;
+; 0.425 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q                                ; CK           ; CK          ; 0.000        ; 0.000      ; 0.577      ;
+; 0.539 ; bnt_sincrono:bnt_rd|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q                                ; CK           ; CK          ; 0.000        ; 0.000      ; 0.691      ;
+; 0.546 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q                                ; CK           ; CK          ; 0.000        ; 0.003      ; 0.701      ;
+; 0.577 ; bnt_sincrono:bnt_wr|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4|q                                ; CK           ; CK          ; 0.000        ; 0.003      ; 0.732      ;
+; 0.687 ; bnt_sincrono:bnt_rd|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS                              ; CK           ; CK          ; 0.000        ; -0.003     ; 0.836      ;
+; 0.688 ; bnt_sincrono:bnt_rd|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                              ; CK           ; CK          ; 0.000        ; -0.003     ; 0.837      ;
+; 0.691 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 0.843      ;
+; 0.718 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                              ; CK           ; CK          ; 0.000        ; -0.003     ; 0.867      ;
+; 0.719 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS                              ; CK           ; CK          ; 0.000        ; -0.003     ; 0.868      ;
+; 0.738 ; bnt_sincrono:bnt_rd|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS                              ; CK           ; CK          ; 0.000        ; -0.003     ; 0.887      ;
+; 0.753 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS                              ; CK           ; CK          ; 0.000        ; -0.003     ; 0.902      ;
+; 0.755 ; bnt_sincrono:bnt_rd|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS                              ; CK           ; CK          ; 0.000        ; -0.003     ; 0.904      ;
+; 0.812 ; bnt_sincrono:bnt_wr|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 0.964      ;
+; 0.814 ; bnt_sincrono:bnt_wr|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 0.966      ;
+; 0.814 ; bnt_sincrono:bnt_wr|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 0.966      ;
+; 0.833 ; bnt_sincrono:bnt_rd|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS                              ; CK           ; CK          ; 0.000        ; -0.003     ; 0.982      ;
+; 0.846 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 0.998      ;
+; 0.848 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 1.000      ;
+; 0.848 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 1.000      ;
+; 0.854 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 1.006      ;
+; 0.889 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.039      ;
+; 0.889 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.039      ;
+; 0.889 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.039      ;
+; 0.889 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.039      ;
+; 0.889 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.039      ;
+; 0.889 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.039      ;
+; 0.889 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.039      ;
+; 0.889 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.039      ;
+; 0.925 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.077      ;
+; 0.925 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.077      ;
+; 0.925 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.077      ;
+; 0.925 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.077      ;
+; 0.925 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.077      ;
+; 0.925 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.077      ;
+; 0.925 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.077      ;
+; 0.925 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.077      ;
+; 0.925 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.077      ;
+; 0.925 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 1.077      ;
+; 0.926 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 1.078      ;
+; 0.927 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.077      ;
+; 0.927 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.077      ;
+; 0.927 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.077      ;
+; 0.927 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.077      ;
+; 0.927 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.077      ;
+; 0.927 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.077      ;
+; 0.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.084      ;
+; 0.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.084      ;
+; 0.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.084      ;
+; 0.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.084      ;
+; 0.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.084      ;
+; 0.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.084      ;
+; 0.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.084      ;
+; 0.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.084      ;
+; 0.932 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.084      ;
+; 0.942 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.092      ;
+; 0.942 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.092      ;
+; 0.942 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.092      ;
+; 0.942 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.092      ;
+; 0.942 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.092      ;
+; 0.942 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.092      ;
+; 0.945 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.097      ;
+; 0.945 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.097      ;
+; 0.945 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.097      ;
+; 0.945 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.097      ;
+; 0.945 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.097      ;
+; 0.945 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.097      ;
+; 0.945 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.097      ;
+; 0.945 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.097      ;
+; 0.945 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG03|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 0.000        ; 0.000      ; 1.097      ;
+; 0.947 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.097      ;
+; 0.947 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.097      ;
+; 0.947 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.097      ;
+; 0.947 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.097      ;
+; 0.947 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.097      ;
+; 0.947 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG02|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.097      ;
+; 0.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_15|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.103      ;
+; 0.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_13|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.103      ;
+; 0.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_10|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.103      ;
+; 0.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_07|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.103      ;
+; 0.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_03|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.103      ;
+; 0.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_02|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.103      ;
+; 0.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_01|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.103      ;
+; 0.953 ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1|qS ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_00|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.103      ;
+; 0.969 ; bnt_sincrono:bnt_wr|ffd:FFD1|q                     ; FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3|qS                              ; CK           ; CK          ; 0.000        ; 0.000      ; 1.121      ;
+; 0.973 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_12|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.123      ;
+; 0.973 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_14|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.123      ;
+; 0.973 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_11|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.123      ;
+; 0.973 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_09|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.123      ;
+; 0.973 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_08|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.123      ;
+; 0.973 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_06|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.123      ;
+; 0.973 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_05|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.123      ;
+; 0.973 ; bnt_sincrono:bnt_wr|ffd:FFD2|q                     ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_04|q ; CK           ; CK          ; 0.000        ; -0.002     ; 1.123      ;
++-------+----------------------------------------------------+---------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CK'                                                                                                                              ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                           ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CK    ; Rise       ; CK                                                                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG013|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG014|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_02|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_03|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_04|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_05|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_06|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_07|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_08|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_09|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_10|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_11|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_12|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_13|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_14|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG015|Registrador_16_bits:REG_00|ffd:FFD_15|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_00|q ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CK    ; Rise       ; FIFO:fifo00|REGISTRADOR_LD_16BITS:REG016|Registrador_16_bits:REG_00|ffd:FFD_01|q ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; RD        ; CK         ; 1.753  ; 1.753  ; Rise       ; CK              ;
+; SW[*]     ; CK         ; 2.372  ; 2.372  ; Rise       ; CK              ;
+;  SW[0]    ; CK         ; 2.079  ; 2.079  ; Rise       ; CK              ;
+;  SW[1]    ; CK         ; 2.043  ; 2.043  ; Rise       ; CK              ;
+;  SW[2]    ; CK         ; 1.949  ; 1.949  ; Rise       ; CK              ;
+;  SW[3]    ; CK         ; 2.212  ; 2.212  ; Rise       ; CK              ;
+;  SW[4]    ; CK         ; 1.903  ; 1.903  ; Rise       ; CK              ;
+;  SW[5]    ; CK         ; 2.036  ; 2.036  ; Rise       ; CK              ;
+;  SW[6]    ; CK         ; 2.202  ; 2.202  ; Rise       ; CK              ;
+;  SW[7]    ; CK         ; 2.030  ; 2.030  ; Rise       ; CK              ;
+;  SW[8]    ; CK         ; 2.301  ; 2.301  ; Rise       ; CK              ;
+;  SW[9]    ; CK         ; 2.070  ; 2.070  ; Rise       ; CK              ;
+;  SW[10]   ; CK         ; 2.100  ; 2.100  ; Rise       ; CK              ;
+;  SW[11]   ; CK         ; 2.073  ; 2.073  ; Rise       ; CK              ;
+;  SW[12]   ; CK         ; 2.372  ; 2.372  ; Rise       ; CK              ;
+;  SW[13]   ; CK         ; -0.422 ; -0.422 ; Rise       ; CK              ;
+;  SW[14]   ; CK         ; 2.086  ; 2.086  ; Rise       ; CK              ;
+;  SW[15]   ; CK         ; -0.291 ; -0.291 ; Rise       ; CK              ;
+; WR        ; CK         ; 2.051  ; 2.051  ; Rise       ; CK              ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; RD        ; CK         ; -1.633 ; -1.633 ; Rise       ; CK              ;
+; SW[*]     ; CK         ; 0.868  ; 0.868  ; Rise       ; CK              ;
+;  SW[0]    ; CK         ; -1.613 ; -1.613 ; Rise       ; CK              ;
+;  SW[1]    ; CK         ; -1.644 ; -1.644 ; Rise       ; CK              ;
+;  SW[2]    ; CK         ; -1.703 ; -1.703 ; Rise       ; CK              ;
+;  SW[3]    ; CK         ; -1.635 ; -1.635 ; Rise       ; CK              ;
+;  SW[4]    ; CK         ; -1.685 ; -1.685 ; Rise       ; CK              ;
+;  SW[5]    ; CK         ; -1.628 ; -1.628 ; Rise       ; CK              ;
+;  SW[6]    ; CK         ; -1.644 ; -1.644 ; Rise       ; CK              ;
+;  SW[7]    ; CK         ; -1.608 ; -1.608 ; Rise       ; CK              ;
+;  SW[8]    ; CK         ; -1.736 ; -1.736 ; Rise       ; CK              ;
+;  SW[9]    ; CK         ; -1.642 ; -1.642 ; Rise       ; CK              ;
+;  SW[10]   ; CK         ; -1.689 ; -1.689 ; Rise       ; CK              ;
+;  SW[11]   ; CK         ; -1.706 ; -1.706 ; Rise       ; CK              ;
+;  SW[12]   ; CK         ; -1.667 ; -1.667 ; Rise       ; CK              ;
+;  SW[13]   ; CK         ; 0.868  ; 0.868  ; Rise       ; CK              ;
+;  SW[14]   ; CK         ; -1.718 ; -1.718 ; Rise       ; CK              ;
+;  SW[15]   ; CK         ; 0.767  ; 0.767  ; Rise       ; CK              ;
+; WR        ; CK         ; -1.931 ; -1.931 ; Rise       ; CK              ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; EM        ; CK         ; 4.778  ; 4.778  ; Rise       ; CK              ;
+; FU        ; CK         ; 4.804  ; 4.804  ; Rise       ; CK              ;
+; HEX0[*]   ; CK         ; 10.395 ; 10.395 ; Rise       ; CK              ;
+;  HEX0[0]  ; CK         ; 10.247 ; 10.247 ; Rise       ; CK              ;
+;  HEX0[1]  ; CK         ; 10.330 ; 10.330 ; Rise       ; CK              ;
+;  HEX0[2]  ; CK         ; 10.222 ; 10.222 ; Rise       ; CK              ;
+;  HEX0[3]  ; CK         ; 10.248 ; 10.248 ; Rise       ; CK              ;
+;  HEX0[4]  ; CK         ; 10.329 ; 10.329 ; Rise       ; CK              ;
+;  HEX0[5]  ; CK         ; 10.367 ; 10.367 ; Rise       ; CK              ;
+;  HEX0[6]  ; CK         ; 10.395 ; 10.395 ; Rise       ; CK              ;
+; HEX1[*]   ; CK         ; 10.583 ; 10.583 ; Rise       ; CK              ;
+;  HEX1[0]  ; CK         ; 10.580 ; 10.580 ; Rise       ; CK              ;
+;  HEX1[1]  ; CK         ; 10.464 ; 10.464 ; Rise       ; CK              ;
+;  HEX1[2]  ; CK         ; 10.583 ; 10.583 ; Rise       ; CK              ;
+;  HEX1[3]  ; CK         ; 10.556 ; 10.556 ; Rise       ; CK              ;
+;  HEX1[4]  ; CK         ; 10.472 ; 10.472 ; Rise       ; CK              ;
+;  HEX1[5]  ; CK         ; 10.563 ; 10.563 ; Rise       ; CK              ;
+;  HEX1[6]  ; CK         ; 10.462 ; 10.462 ; Rise       ; CK              ;
+; HEX2[*]   ; CK         ; 10.585 ; 10.585 ; Rise       ; CK              ;
+;  HEX2[0]  ; CK         ; 10.492 ; 10.492 ; Rise       ; CK              ;
+;  HEX2[1]  ; CK         ; 10.365 ; 10.365 ; Rise       ; CK              ;
+;  HEX2[2]  ; CK         ; 10.585 ; 10.585 ; Rise       ; CK              ;
+;  HEX2[3]  ; CK         ; 10.377 ; 10.377 ; Rise       ; CK              ;
+;  HEX2[4]  ; CK         ; 10.485 ; 10.485 ; Rise       ; CK              ;
+;  HEX2[5]  ; CK         ; 10.490 ; 10.490 ; Rise       ; CK              ;
+;  HEX2[6]  ; CK         ; 10.474 ; 10.474 ; Rise       ; CK              ;
+; HEX3[*]   ; CK         ; 10.620 ; 10.620 ; Rise       ; CK              ;
+;  HEX3[0]  ; CK         ; 10.530 ; 10.530 ; Rise       ; CK              ;
+;  HEX3[1]  ; CK         ; 10.420 ; 10.420 ; Rise       ; CK              ;
+;  HEX3[2]  ; CK         ; 10.534 ; 10.534 ; Rise       ; CK              ;
+;  HEX3[3]  ; CK         ; 10.417 ; 10.417 ; Rise       ; CK              ;
+;  HEX3[4]  ; CK         ; 10.620 ; 10.620 ; Rise       ; CK              ;
+;  HEX3[5]  ; CK         ; 10.443 ; 10.443 ; Rise       ; CK              ;
+;  HEX3[6]  ; CK         ; 10.441 ; 10.441 ; Rise       ; CK              ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; EM        ; CK         ; 4.314 ; 4.314 ; Rise       ; CK              ;
+; FU        ; CK         ; 4.314 ; 4.314 ; Rise       ; CK              ;
+; HEX0[*]   ; CK         ; 4.515 ; 4.515 ; Rise       ; CK              ;
+;  HEX0[0]  ; CK         ; 4.531 ; 4.531 ; Rise       ; CK              ;
+;  HEX0[1]  ; CK         ; 4.623 ; 4.623 ; Rise       ; CK              ;
+;  HEX0[2]  ; CK         ; 4.515 ; 4.515 ; Rise       ; CK              ;
+;  HEX0[3]  ; CK         ; 4.531 ; 4.531 ; Rise       ; CK              ;
+;  HEX0[4]  ; CK         ; 4.623 ; 4.623 ; Rise       ; CK              ;
+;  HEX0[5]  ; CK         ; 4.650 ; 4.650 ; Rise       ; CK              ;
+;  HEX0[6]  ; CK         ; 4.679 ; 4.679 ; Rise       ; CK              ;
+; HEX1[*]   ; CK         ; 5.107 ; 5.107 ; Rise       ; CK              ;
+;  HEX1[0]  ; CK         ; 5.227 ; 5.227 ; Rise       ; CK              ;
+;  HEX1[1]  ; CK         ; 5.149 ; 5.149 ; Rise       ; CK              ;
+;  HEX1[2]  ; CK         ; 5.247 ; 5.247 ; Rise       ; CK              ;
+;  HEX1[3]  ; CK         ; 5.203 ; 5.203 ; Rise       ; CK              ;
+;  HEX1[4]  ; CK         ; 5.148 ; 5.148 ; Rise       ; CK              ;
+;  HEX1[5]  ; CK         ; 5.208 ; 5.208 ; Rise       ; CK              ;
+;  HEX1[6]  ; CK         ; 5.107 ; 5.107 ; Rise       ; CK              ;
+; HEX2[*]   ; CK         ; 5.331 ; 5.331 ; Rise       ; CK              ;
+;  HEX2[0]  ; CK         ; 5.458 ; 5.458 ; Rise       ; CK              ;
+;  HEX2[1]  ; CK         ; 5.331 ; 5.331 ; Rise       ; CK              ;
+;  HEX2[2]  ; CK         ; 5.551 ; 5.551 ; Rise       ; CK              ;
+;  HEX2[3]  ; CK         ; 5.343 ; 5.343 ; Rise       ; CK              ;
+;  HEX2[4]  ; CK         ; 5.451 ; 5.451 ; Rise       ; CK              ;
+;  HEX2[5]  ; CK         ; 5.456 ; 5.456 ; Rise       ; CK              ;
+;  HEX2[6]  ; CK         ; 5.440 ; 5.440 ; Rise       ; CK              ;
+; HEX3[*]   ; CK         ; 5.683 ; 5.683 ; Rise       ; CK              ;
+;  HEX3[0]  ; CK         ; 5.804 ; 5.804 ; Rise       ; CK              ;
+;  HEX3[1]  ; CK         ; 5.683 ; 5.683 ; Rise       ; CK              ;
+;  HEX3[2]  ; CK         ; 5.802 ; 5.802 ; Rise       ; CK              ;
+;  HEX3[3]  ; CK         ; 5.685 ; 5.685 ; Rise       ; CK              ;
+;  HEX3[4]  ; CK         ; 5.883 ; 5.883 ; Rise       ; CK              ;
+;  HEX3[5]  ; CK         ; 5.706 ; 5.706 ; Rise       ; CK              ;
+;  HEX3[6]  ; CK         ; 5.704 ; 5.704 ; Rise       ; CK              ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -1.953   ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+;  CK              ; -1.953   ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; -232.274 ; 0.0   ; 0.0      ; 0.0     ; -138.38             ;
+;  CK              ; -232.274 ; 0.000 ; N/A      ; N/A     ; -138.380            ;
++------------------+----------+-------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; RD        ; CK         ; 3.205  ; 3.205  ; Rise       ; CK              ;
+; SW[*]     ; CK         ; 4.492  ; 4.492  ; Rise       ; CK              ;
+;  SW[0]    ; CK         ; 3.893  ; 3.893  ; Rise       ; CK              ;
+;  SW[1]    ; CK         ; 3.814  ; 3.814  ; Rise       ; CK              ;
+;  SW[2]    ; CK         ; 3.598  ; 3.598  ; Rise       ; CK              ;
+;  SW[3]    ; CK         ; 4.167  ; 4.167  ; Rise       ; CK              ;
+;  SW[4]    ; CK         ; 3.541  ; 3.541  ; Rise       ; CK              ;
+;  SW[5]    ; CK         ; 3.809  ; 3.809  ; Rise       ; CK              ;
+;  SW[6]    ; CK         ; 4.045  ; 4.045  ; Rise       ; CK              ;
+;  SW[7]    ; CK         ; 3.811  ; 3.811  ; Rise       ; CK              ;
+;  SW[8]    ; CK         ; 4.369  ; 4.369  ; Rise       ; CK              ;
+;  SW[9]    ; CK         ; 3.856  ; 3.856  ; Rise       ; CK              ;
+;  SW[10]   ; CK         ; 3.929  ; 3.929  ; Rise       ; CK              ;
+;  SW[11]   ; CK         ; 3.854  ; 3.854  ; Rise       ; CK              ;
+;  SW[12]   ; CK         ; 4.492  ; 4.492  ; Rise       ; CK              ;
+;  SW[13]   ; CK         ; -0.308 ; -0.308 ; Rise       ; CK              ;
+;  SW[14]   ; CK         ; 3.889  ; 3.889  ; Rise       ; CK              ;
+;  SW[15]   ; CK         ; -0.006 ; -0.006 ; Rise       ; CK              ;
+; WR        ; CK         ; 3.812  ; 3.812  ; Rise       ; CK              ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; RD        ; CK         ; -1.633 ; -1.633 ; Rise       ; CK              ;
+; SW[*]     ; CK         ; 1.096  ; 1.096  ; Rise       ; CK              ;
+;  SW[0]    ; CK         ; -1.613 ; -1.613 ; Rise       ; CK              ;
+;  SW[1]    ; CK         ; -1.644 ; -1.644 ; Rise       ; CK              ;
+;  SW[2]    ; CK         ; -1.703 ; -1.703 ; Rise       ; CK              ;
+;  SW[3]    ; CK         ; -1.635 ; -1.635 ; Rise       ; CK              ;
+;  SW[4]    ; CK         ; -1.685 ; -1.685 ; Rise       ; CK              ;
+;  SW[5]    ; CK         ; -1.628 ; -1.628 ; Rise       ; CK              ;
+;  SW[6]    ; CK         ; -1.644 ; -1.644 ; Rise       ; CK              ;
+;  SW[7]    ; CK         ; -1.608 ; -1.608 ; Rise       ; CK              ;
+;  SW[8]    ; CK         ; -1.736 ; -1.736 ; Rise       ; CK              ;
+;  SW[9]    ; CK         ; -1.642 ; -1.642 ; Rise       ; CK              ;
+;  SW[10]   ; CK         ; -1.689 ; -1.689 ; Rise       ; CK              ;
+;  SW[11]   ; CK         ; -1.706 ; -1.706 ; Rise       ; CK              ;
+;  SW[12]   ; CK         ; -1.667 ; -1.667 ; Rise       ; CK              ;
+;  SW[13]   ; CK         ; 1.096  ; 1.096  ; Rise       ; CK              ;
+;  SW[14]   ; CK         ; -1.718 ; -1.718 ; Rise       ; CK              ;
+;  SW[15]   ; CK         ; 0.929  ; 0.929  ; Rise       ; CK              ;
+; WR        ; CK         ; -1.931 ; -1.931 ; Rise       ; CK              ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; EM        ; CK         ; 8.916  ; 8.916  ; Rise       ; CK              ;
+; FU        ; CK         ; 8.914  ; 8.914  ; Rise       ; CK              ;
+; HEX0[*]   ; CK         ; 21.872 ; 21.872 ; Rise       ; CK              ;
+;  HEX0[0]  ; CK         ; 21.582 ; 21.582 ; Rise       ; CK              ;
+;  HEX0[1]  ; CK         ; 21.781 ; 21.781 ; Rise       ; CK              ;
+;  HEX0[2]  ; CK         ; 21.540 ; 21.540 ; Rise       ; CK              ;
+;  HEX0[3]  ; CK         ; 21.582 ; 21.582 ; Rise       ; CK              ;
+;  HEX0[4]  ; CK         ; 21.769 ; 21.769 ; Rise       ; CK              ;
+;  HEX0[5]  ; CK         ; 21.826 ; 21.826 ; Rise       ; CK              ;
+;  HEX0[6]  ; CK         ; 21.872 ; 21.872 ; Rise       ; CK              ;
+; HEX1[*]   ; CK         ; 22.294 ; 22.294 ; Rise       ; CK              ;
+;  HEX1[0]  ; CK         ; 22.294 ; 22.294 ; Rise       ; CK              ;
+;  HEX1[1]  ; CK         ; 22.061 ; 22.061 ; Rise       ; CK              ;
+;  HEX1[2]  ; CK         ; 22.271 ; 22.271 ; Rise       ; CK              ;
+;  HEX1[3]  ; CK         ; 22.270 ; 22.270 ; Rise       ; CK              ;
+;  HEX1[4]  ; CK         ; 22.038 ; 22.038 ; Rise       ; CK              ;
+;  HEX1[5]  ; CK         ; 22.279 ; 22.279 ; Rise       ; CK              ;
+;  HEX1[6]  ; CK         ; 22.054 ; 22.054 ; Rise       ; CK              ;
+; HEX2[*]   ; CK         ; 22.301 ; 22.301 ; Rise       ; CK              ;
+;  HEX2[0]  ; CK         ; 22.107 ; 22.107 ; Rise       ; CK              ;
+;  HEX2[1]  ; CK         ; 21.861 ; 21.861 ; Rise       ; CK              ;
+;  HEX2[2]  ; CK         ; 22.301 ; 22.301 ; Rise       ; CK              ;
+;  HEX2[3]  ; CK         ; 21.870 ; 21.870 ; Rise       ; CK              ;
+;  HEX2[4]  ; CK         ; 22.074 ; 22.074 ; Rise       ; CK              ;
+;  HEX2[5]  ; CK         ; 22.112 ; 22.112 ; Rise       ; CK              ;
+;  HEX2[6]  ; CK         ; 22.088 ; 22.088 ; Rise       ; CK              ;
+; HEX3[*]   ; CK         ; 22.407 ; 22.407 ; Rise       ; CK              ;
+;  HEX3[0]  ; CK         ; 22.195 ; 22.195 ; Rise       ; CK              ;
+;  HEX3[1]  ; CK         ; 21.961 ; 21.961 ; Rise       ; CK              ;
+;  HEX3[2]  ; CK         ; 22.194 ; 22.194 ; Rise       ; CK              ;
+;  HEX3[3]  ; CK         ; 21.959 ; 21.959 ; Rise       ; CK              ;
+;  HEX3[4]  ; CK         ; 22.407 ; 22.407 ; Rise       ; CK              ;
+;  HEX3[5]  ; CK         ; 21.986 ; 21.986 ; Rise       ; CK              ;
+;  HEX3[6]  ; CK         ; 21.983 ; 21.983 ; Rise       ; CK              ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; EM        ; CK         ; 4.314 ; 4.314 ; Rise       ; CK              ;
+; FU        ; CK         ; 4.314 ; 4.314 ; Rise       ; CK              ;
+; HEX0[*]   ; CK         ; 4.515 ; 4.515 ; Rise       ; CK              ;
+;  HEX0[0]  ; CK         ; 4.531 ; 4.531 ; Rise       ; CK              ;
+;  HEX0[1]  ; CK         ; 4.623 ; 4.623 ; Rise       ; CK              ;
+;  HEX0[2]  ; CK         ; 4.515 ; 4.515 ; Rise       ; CK              ;
+;  HEX0[3]  ; CK         ; 4.531 ; 4.531 ; Rise       ; CK              ;
+;  HEX0[4]  ; CK         ; 4.623 ; 4.623 ; Rise       ; CK              ;
+;  HEX0[5]  ; CK         ; 4.650 ; 4.650 ; Rise       ; CK              ;
+;  HEX0[6]  ; CK         ; 4.679 ; 4.679 ; Rise       ; CK              ;
+; HEX1[*]   ; CK         ; 5.107 ; 5.107 ; Rise       ; CK              ;
+;  HEX1[0]  ; CK         ; 5.227 ; 5.227 ; Rise       ; CK              ;
+;  HEX1[1]  ; CK         ; 5.149 ; 5.149 ; Rise       ; CK              ;
+;  HEX1[2]  ; CK         ; 5.247 ; 5.247 ; Rise       ; CK              ;
+;  HEX1[3]  ; CK         ; 5.203 ; 5.203 ; Rise       ; CK              ;
+;  HEX1[4]  ; CK         ; 5.148 ; 5.148 ; Rise       ; CK              ;
+;  HEX1[5]  ; CK         ; 5.208 ; 5.208 ; Rise       ; CK              ;
+;  HEX1[6]  ; CK         ; 5.107 ; 5.107 ; Rise       ; CK              ;
+; HEX2[*]   ; CK         ; 5.331 ; 5.331 ; Rise       ; CK              ;
+;  HEX2[0]  ; CK         ; 5.458 ; 5.458 ; Rise       ; CK              ;
+;  HEX2[1]  ; CK         ; 5.331 ; 5.331 ; Rise       ; CK              ;
+;  HEX2[2]  ; CK         ; 5.551 ; 5.551 ; Rise       ; CK              ;
+;  HEX2[3]  ; CK         ; 5.343 ; 5.343 ; Rise       ; CK              ;
+;  HEX2[4]  ; CK         ; 5.451 ; 5.451 ; Rise       ; CK              ;
+;  HEX2[5]  ; CK         ; 5.456 ; 5.456 ; Rise       ; CK              ;
+;  HEX2[6]  ; CK         ; 5.440 ; 5.440 ; Rise       ; CK              ;
+; HEX3[*]   ; CK         ; 5.683 ; 5.683 ; Rise       ; CK              ;
+;  HEX3[0]  ; CK         ; 5.804 ; 5.804 ; Rise       ; CK              ;
+;  HEX3[1]  ; CK         ; 5.683 ; 5.683 ; Rise       ; CK              ;
+;  HEX3[2]  ; CK         ; 5.802 ; 5.802 ; Rise       ; CK              ;
+;  HEX3[3]  ; CK         ; 5.685 ; 5.685 ; Rise       ; CK              ;
+;  HEX3[4]  ; CK         ; 5.883 ; 5.883 ; Rise       ; CK              ;
+;  HEX3[5]  ; CK         ; 5.706 ; 5.706 ; Rise       ; CK              ;
+;  HEX3[6]  ; CK         ; 5.704 ; 5.704 ; Rise       ; CK              ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CK         ; CK       ; 811      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CK         ; CK       ; 811      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 19    ; 19   ;
+; Unconstrained Input Port Paths  ; 267   ; 267  ;
+; Unconstrained Output Ports      ; 30    ; 30   ;
+; Unconstrained Output Port Paths ; 3342  ; 3342 ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Dec 13 16:05:07 2023
+Info: Command: quartus_sta projeto_6 -c projeto_6
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'projeto_6.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CK CK
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.953
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.953      -232.274 CK 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 CK 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380      -138.380 CK 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.436
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.436       -44.679 CK 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 CK 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380      -138.380 CK 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4558 megabytes
+    Info: Processing ended: Wed Dec 13 16:05:09 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,530 @@
+m255
+K3
+13
+cModel Technology
+Z0 dG:\UFRN2023.2\CIRCUITOS DIGITAIS\TEORIA\PROJETO6\implementação\projeto 6_teorico\simulation\modelsim
+Eadd3
+Z1 w1702425016
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dG:\UFRN2023.2\CIRCUITOS DIGITAIS\TEORIA\PROJETO6\implementação\projeto 6_teorico\simulation\modelsim
+Z5 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ADD3.vhd
+Z6 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ADD3.vhd
+l0
+L4
+Vi7:TeCK:S_lEbHRHF8PgO0
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1702496320.430000
+Z9 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ADD3.vhd|
+Z10 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ADD3.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 X?LJ03Aaba8Q4d6>nIl3C3
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 4 add3 0 22 i7:TeCK:S_lEbHRHF8PgO0
+l11
+L9
+VoZFYmd2aazO:T?O[339h:0
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 kzX5TOB0WiEm4Fz=hAnm12
+!i10b 1
+Ebin_bcd_16bits
+Z13 w1702431588
+R2
+R3
+R4
+Z14 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bin_bcd_16BITS.vhd
+Z15 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bin_bcd_16BITS.vhd
+l0
+L4
+VIW7n5JC@1E8S5PD9kJH^E0
+R7
+31
+Z16 !s108 1702496320.687000
+Z17 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bin_bcd_16BITS.vhd|
+Z18 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bin_bcd_16BITS.vhd|
+R11
+R12
+!s100 3=1bo[dWG95l1`U1X0d:O0
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 14 bin_bcd_16bits 0 22 IW7n5JC@1E8S5PD9kJH^E0
+l22
+L9
+V@U6V<^_Iic`>6B;c1POgM1
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 _mZ<TX48lm<m<4mJm6b4Q3
+!i10b 1
+Ebnt_sincrono
+Z19 w1702494292
+R2
+R3
+R4
+Z20 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bnt_sincrono.vhd
+Z21 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bnt_sincrono.vhd
+l0
+L4
+VMigVKB<4_WbCWHaQ6Wk?a2
+!s100 kYQ:daQnUNW7ddlhJ[bQY3
+R7
+31
+!i10b 1
+Z22 !s108 1702496322.269000
+Z23 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bnt_sincrono.vhd|
+Z24 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bnt_sincrono.vhd|
+R11
+R12
+Ackt
+R2
+R3
+DEx4 work 12 bnt_sincrono 0 22 MigVKB<4_WbCWHaQ6Wk?a2
+l18
+L9
+VcEo;kjd5YRTQeKIC5kE=]3
+!s100 OX05`hVQGbUITn006Uzec1
+R7
+31
+!i10b 1
+R22
+R23
+R24
+R11
+R12
+Econtador_up_dw_4_bits
+Z25 w1702420816
+R2
+R3
+R4
+Z26 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/contador_up_dw_4_bits.vhd
+Z27 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/contador_up_dw_4_bits.vhd
+l0
+L4
+V0bYS6Nac7NGSIE@j5HmGc3
+R7
+31
+Z28 !s108 1702496319.097000
+Z29 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/contador_up_dw_4_bits.vhd|
+Z30 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/contador_up_dw_4_bits.vhd|
+R11
+R12
+!s100 ]0nN?9Xh4<8:U2I:flE<I2
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 21 contador_up_dw_4_bits 0 22 0bYS6Nac7NGSIE@j5HmGc3
+l50
+L10
+V4dS3DVZ11nDVLXmbY=lZ60
+R7
+31
+R28
+R29
+R30
+R11
+R12
+!s100 1Mb:1_@4UbiQ37>99NXmg0
+!i10b 1
+Edemux_1x16
+Z31 w1702437864
+R2
+R3
+R4
+Z32 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Demux_1x16.vhd
+Z33 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Demux_1x16.vhd
+l0
+L4
+VT;Ja<Qe67S=WPJ3Q1S@EG2
+R7
+31
+Z34 !s108 1702496321.475000
+Z35 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Demux_1x16.vhd|
+Z36 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Demux_1x16.vhd|
+R11
+R12
+!s100 QAU@33bcP;9HLKYR9;YRN2
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 10 demux_1x16 0 22 T;Ja<Qe67S=WPJ3Q1S@EG2
+l13
+L10
+V9Wig]kfAO>bGYjbaicaX01
+R7
+31
+R34
+R35
+R36
+R11
+R12
+!s100 blGP@8<aCTk6FaeGI=M`J3
+!i10b 1
+Effd
+Z37 w1702415968
+R2
+R3
+R4
+Z38 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffd.vhd
+Z39 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffd.vhd
+l0
+L4
+V`2;cYd8?Kj07VH5iH;hDZ3
+R7
+31
+Z40 !s108 1702496318.846000
+Z41 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffd.vhd|
+Z42 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffd.vhd|
+R11
+R12
+!s100 ^<<4Tz4[YNE2TY?1gS:P03
+!i10b 1
+Alogica
+R2
+R3
+DEx4 work 3 ffd 0 22 `2;cYd8?Kj07VH5iH;hDZ3
+l11
+L9
+VFEM`==zedZ8?j[5VOBj<Z2
+R7
+31
+R40
+R41
+R42
+R11
+R12
+!s100 m`0Z<@WhZ>iUWEgzL=9]H1
+!i10b 1
+Effjk
+Z43 w1702416768
+R2
+R3
+R4
+Z44 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffjk.vhd
+Z45 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffjk.vhd
+l0
+L4
+V1JC?R9DZ2dO`:mldjJ:]b0
+R7
+31
+Z46 !s108 1702496318.576000
+Z47 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffjk.vhd|
+Z48 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffjk.vhd|
+R11
+R12
+!s100 =PV?IQ0SUdb^KVLX]S4@C2
+!i10b 1
+Alogica
+R2
+R3
+DEx4 work 4 ffjk 0 22 1JC?R9DZ2dO`:mldjJ:]b0
+l15
+L11
+V]_`GhEM4]?MRICSK?kCO`1
+R7
+31
+R46
+R47
+R48
+R11
+R12
+!s100 Zk[iQk8XDHio>YJ]0CXd@2
+!i10b 1
+Efifo
+Z49 w1702491146
+R2
+R3
+R4
+Z50 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/FIFO.vhd
+Z51 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/FIFO.vhd
+l0
+L3
+V8?oEQJ5nK@MS]oVdQM>PU1
+R7
+31
+Z52 !s108 1702496321.745000
+Z53 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/FIFO.vhd|
+Z54 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/FIFO.vhd|
+R11
+R12
+!s100 HimiL`bIIkT;N9G`3J@Kk3
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 4 fifo 0 22 8?oEQJ5nK@MS]oVdQM>PU1
+l53
+L10
+VDodRccZ9Z@mf1LP=7hSnz2
+R7
+31
+R52
+R53
+R54
+R11
+R12
+!s100 nYdKl]?WR>mz>B?Z6V8C[0
+!i10b 1
+Emain
+Z55 w1702491344
+R2
+R3
+R4
+Z56 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MAIN.vhd
+Z57 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MAIN.vhd
+l0
+L4
+VTm]1`JCzRDgS9M63750>k1
+R7
+31
+Z58 !s108 1702496322.004000
+Z59 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MAIN.vhd|
+Z60 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MAIN.vhd|
+R11
+R12
+!s100 cAMoR`8KX2d@D<o3d54Tn2
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 4 main 0 22 Tm]1`JCzRDgS9M63750>k1
+l34
+L11
+VRBloV7oTl6CLR`4I]J21R3
+R7
+31
+R58
+R59
+R60
+R11
+R12
+!s100 o5cX<T_Dd`?<7LJ:nW<c]1
+!i10b 1
+Emultiplexer16to1_16_bits
+Z61 w1702438184
+R2
+R3
+R4
+Z62 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Multiplexer16To1_16_BITS.vhd
+Z63 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Multiplexer16To1_16_BITS.vhd
+l0
+L4
+VUdba[W^;>n1j^i4OQbJRB1
+R7
+31
+Z64 !s108 1702496321.213000
+Z65 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Multiplexer16To1_16_BITS.vhd|
+Z66 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Multiplexer16To1_16_BITS.vhd|
+R11
+R12
+!s100 26Rg?Z7B]>cjSj7SWI@I_1
+!i10b 1
+Amain
+R2
+R3
+DEx4 work 24 multiplexer16to1_16_bits 0 22 Udba[W^;>n1j^i4OQbJRB1
+l26
+L12
+VE=>]a?@49o2ngkD8EhVWZ1
+R7
+31
+R64
+R65
+R66
+R11
+R12
+!s100 P?3NOc9IYzEU37ekOE`oW2
+!i10b 1
+Emux_1bit
+Z67 w1702417526
+R2
+R3
+R4
+Z68 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MUX_1bit.vhd
+Z69 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MUX_1bit.vhd
+l0
+L4
+VF2=VmQoUXIb?E=81G`ki^3
+R7
+31
+Z70 !s108 1702496319.370000
+Z71 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MUX_1bit.vhd|
+Z72 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MUX_1bit.vhd|
+R11
+R12
+!s100 oF0U2aIgGdXjEn9OK^G6<1
+!i10b 1
+Amain
+R2
+R3
+DEx4 work 8 mux_1bit 0 22 F2=VmQoUXIb?E=81G`ki^3
+l12
+L11
+V;`L1B4g0VgN7iPf]HB?L00
+R7
+31
+R70
+R71
+R72
+R11
+R12
+!s100 PeZ4nheFfIg1?>ha4D5cg3
+!i10b 1
+Emux_2x1_16bits
+Z73 w1702434584
+R2
+R3
+R4
+Z74 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/mux_2x1_16BITS.vhd
+Z75 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/mux_2x1_16BITS.vhd
+l0
+L4
+VM6I[NhKY;2i6_ImR44CP_2
+R7
+31
+Z76 !s108 1702496319.906000
+Z77 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/mux_2x1_16BITS.vhd|
+Z78 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/mux_2x1_16BITS.vhd|
+R11
+R12
+!s100 2I7?McN3]N22F[bzP5mLb1
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 14 mux_2x1_16bits 0 22 M6I[NhKY;2i6_ImR44CP_2
+l14
+L10
+VUjDC?434]Bmac2`XUmQ9[2
+R7
+31
+R76
+R77
+R78
+R11
+R12
+!s100 ^8lWL3>c<GP5f1mTzgR=A3
+!i10b 1
+Eregistrador_16_bits
+Z79 w1702422970
+R2
+R3
+R4
+Z80 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Registrador_16_bits.vhd
+Z81 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Registrador_16_bits.vhd
+l0
+L4
+VmF[_zoiUQSmk6WJRCei0a0
+R7
+31
+Z82 !s108 1702496319.635000
+Z83 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Registrador_16_bits.vhd|
+Z84 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Registrador_16_bits.vhd|
+R11
+R12
+!s100 5dQo3L3<A5;K;J81UWFnD2
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 19 registrador_16_bits 0 22 mF[_zoiUQSmk6WJRCei0a0
+l22
+L10
+VJ35H?LahPTA^B@`nXYKR30
+R7
+31
+R82
+R83
+R84
+R11
+R12
+!s100 0=zzbOz<;FgVS@L;C]Y]N1
+!i10b 1
+Eregistrador_ld_16bits
+Z85 w1702424418
+R2
+R3
+R4
+Z86 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/REGISTRADOR_LD_16BITS.vhd
+Z87 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/REGISTRADOR_LD_16BITS.vhd
+l0
+L4
+VG__;`cMc[F;ijS55F[lAE2
+R7
+31
+Z88 !s108 1702496320.173000
+Z89 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/REGISTRADOR_LD_16BITS.vhd|
+Z90 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/REGISTRADOR_LD_16BITS.vhd|
+R11
+R12
+!s100 E:=1Za:NAeS8X_zk[VeiX2
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 21 registrador_ld_16bits 0 22 G__;`cMc[F;ijS55F[lAE2
+l28
+L10
+V1E]SI@USOo8^9anH@`Hn=0
+R7
+31
+R88
+R89
+R90
+R11
+R12
+!s100 7WiE2ooS;9JLL6[fd;RL13
+!i10b 1
+Eseg7
+Z91 w1702431244
+R2
+R3
+R4
+Z92 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/seg7.vhd
+Z93 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/seg7.vhd
+l0
+L4
+VKX144n9:2T^f4Rm]3W5TD0
+R7
+31
+Z94 !s108 1702496320.964000
+Z95 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/seg7.vhd|
+Z96 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/seg7.vhd|
+R11
+R12
+!s100 IJa4f98ih[QP>kfK6k^J22
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 4 seg7 0 22 KX144n9:2T^f4Rm]3W5TD0
+l13
+L9
+V5LeN2JAz78n9aSCi:?lmO1
+R7
+31
+R94
+R95
+R96
+R11
+R12
+!s100 dG<I3zaK0fd?Th1<JNZM=2
+!i10b 1
