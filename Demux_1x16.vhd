@@ -1,0 +1,54 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Demux_1x16 is -- entrada de valor teste para saida por moeda
+   Port ( WT: in std_logic;
+			PONTEIRO:  in std_logic_vector(3 downto 0);
+         LD0,LD1,LD2,LD3,LD4,LD5,LD6,LD7,LD8,LD9,LD10,LD11,LD12,LD13,LD14,LD15: out std_logic);
+end Demux_1x16;
+
+architecture ckt of Demux_1x16 is
+
+
+begin
+	process (WT,PONTEIRO)
+			begin
+			LD0 <= '0'; 
+			LD1 <= '0';
+			LD2 <= '0'; 
+			LD3 <= '0'; 
+			LD4 <= '0';
+			LD5 <= '0';
+			LD6 <= '0'; 
+			LD7 <= '0';
+			LD8 <= '0'; 
+			LD9 <= '0'; 
+			LD10 <= '0';
+			LD11 <= '0';
+			LD12 <= '0'; 
+			LD13 <= '0';
+			LD14 <= '0'; 
+			LD15 <= '0'; 
+			
+			
+			case PONTEIRO is
+				when "0000" => LD0 <= WT;
+				when "0001" => LD1 <= WT;
+				when "0010" => LD2 <= WT;
+				when "0011" => LD3 <= WT;
+				when "0100" => LD4 <= WT;
+				when "0101" => LD5 <= WT;
+				when "0110" => LD6 <= WT;
+				when "0111" => LD7 <= WT;
+				when "1000" => LD8 <= WT;
+				when "1001" => LD9 <= WT;
+				when "1010" => LD10 <= WT;
+				when "1011" => LD11 <= WT;
+				when "1100" => LD12 <= WT;
+				when "1101" => LD13 <= WT;
+				when "1110" => LD14 <= WT;
+				when "1111" => LD15 <= WT;
+				when others => LD0 <= '0';
+		end case;
+	end process;
+end ckt;
