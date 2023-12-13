@@ -15,7 +15,7 @@ L4
 Vi7:TeCK:S_lEbHRHF8PgO0
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1702496320.430000
+Z8 !s108 1702506261.188000
 Z9 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ADD3.vhd|
 Z10 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ADD3.vhd|
 Z11 o-93 -work work -O0
@@ -50,7 +50,7 @@ L4
 VIW7n5JC@1E8S5PD9kJH^E0
 R7
 31
-Z16 !s108 1702496320.687000
+Z16 !s108 1702506261.674000
 Z17 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bin_bcd_16BITS.vhd|
 Z18 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bin_bcd_16BITS.vhd|
 R11
@@ -87,7 +87,7 @@ VMigVKB<4_WbCWHaQ6Wk?a2
 R7
 31
 !i10b 1
-Z22 !s108 1702496322.269000
+Z22 !s108 1702506263.307000
 Z23 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bnt_sincrono.vhd|
 Z24 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bnt_sincrono.vhd|
 R11
@@ -120,7 +120,7 @@ L4
 V0bYS6Nac7NGSIE@j5HmGc3
 R7
 31
-Z28 !s108 1702496319.097000
+Z28 !s108 1702506259.848000
 Z29 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/contador_up_dw_4_bits.vhd|
 Z30 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/contador_up_dw_4_bits.vhd|
 R11
@@ -155,7 +155,7 @@ L4
 VT;Ja<Qe67S=WPJ3Q1S@EG2
 R7
 31
-Z34 !s108 1702496321.475000
+Z34 !s108 1702506262.463000
 Z35 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Demux_1x16.vhd|
 Z36 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Demux_1x16.vhd|
 R11
@@ -190,7 +190,7 @@ L4
 V`2;cYd8?Kj07VH5iH;hDZ3
 R7
 31
-Z40 !s108 1702496318.846000
+Z40 !s108 1702506259.592000
 Z41 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffd.vhd|
 Z42 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffd.vhd|
 R11
@@ -225,7 +225,7 @@ L4
 V1JC?R9DZ2dO`:mldjJ:]b0
 R7
 31
-Z46 !s108 1702496318.576000
+Z46 !s108 1702506259.309000
 Z47 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffjk.vhd|
 Z48 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffjk.vhd|
 R11
@@ -260,7 +260,7 @@ L3
 V8?oEQJ5nK@MS]oVdQM>PU1
 R7
 31
-Z52 !s108 1702496321.745000
+Z52 !s108 1702506262.726000
 Z53 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/FIFO.vhd|
 Z54 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/FIFO.vhd|
 R11
@@ -284,7 +284,7 @@ R12
 !s100 nYdKl]?WR>mz>B?Z6V8C[0
 !i10b 1
 Emain
-Z55 w1702491344
+Z55 w1702506078
 R2
 R3
 R4
@@ -292,23 +292,23 @@ Z56 8G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_te
 Z57 FG:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MAIN.vhd
 l0
 L4
-VTm]1`JCzRDgS9M63750>k1
+VK75P7FSX3kP6N_AkOL@c]0
 R7
 31
-Z58 !s108 1702496322.004000
+Z58 !s108 1702506263.044000
 Z59 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MAIN.vhd|
 Z60 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MAIN.vhd|
 R11
 R12
-!s100 cAMoR`8KX2d@D<o3d54Tn2
+!s100 W328e1Lee1DI6<^1fNZZQ3
 !i10b 1
 Ackt
 R2
 R3
-DEx4 work 4 main 0 22 Tm]1`JCzRDgS9M63750>k1
-l34
+DEx4 work 4 main 0 22 K75P7FSX3kP6N_AkOL@c]0
+l43
 L11
-VRBloV7oTl6CLR`4I]J21R3
+VN`OibGaQ6m2d_Man1L0[53
 R7
 31
 R58
@@ -316,7 +316,7 @@ R59
 R60
 R11
 R12
-!s100 o5cX<T_Dd`?<7LJ:nW<c]1
+!s100 LKzH17P>fhFUd47be_DIH2
 !i10b 1
 Emultiplexer16to1_16_bits
 Z61 w1702438184
@@ -330,7 +330,7 @@ L4
 VUdba[W^;>n1j^i4OQbJRB1
 R7
 31
-Z64 !s108 1702496321.213000
+Z64 !s108 1702506262.211000
 Z65 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Multiplexer16To1_16_BITS.vhd|
 Z66 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Multiplexer16To1_16_BITS.vhd|
 R11
@@ -365,7 +365,7 @@ L4
 VF2=VmQoUXIb?E=81G`ki^3
 R7
 31
-Z70 !s108 1702496319.370000
+Z70 !s108 1702506260.106000
 Z71 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MUX_1bit.vhd|
 Z72 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MUX_1bit.vhd|
 R11
@@ -400,7 +400,7 @@ L4
 VM6I[NhKY;2i6_ImR44CP_2
 R7
 31
-Z76 !s108 1702496319.906000
+Z76 !s108 1702506260.619000
 Z77 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/mux_2x1_16BITS.vhd|
 Z78 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/mux_2x1_16BITS.vhd|
 R11
@@ -435,7 +435,7 @@ L4
 VmF[_zoiUQSmk6WJRCei0a0
 R7
 31
-Z82 !s108 1702496319.635000
+Z82 !s108 1702506260.355000
 Z83 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Registrador_16_bits.vhd|
 Z84 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Registrador_16_bits.vhd|
 R11
@@ -470,7 +470,7 @@ L4
 VG__;`cMc[F;ijS55F[lAE2
 R7
 31
-Z88 !s108 1702496320.173000
+Z88 !s108 1702506260.938000
 Z89 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/REGISTRADOR_LD_16BITS.vhd|
 Z90 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/REGISTRADOR_LD_16BITS.vhd|
 R11
@@ -505,7 +505,7 @@ L4
 VKX144n9:2T^f4Rm]3W5TD0
 R7
 31
-Z94 !s108 1702496320.964000
+Z94 !s108 1702506261.942000
 Z95 !s90 -reportprogress|300|-93|-work|work|G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/seg7.vhd|
 Z96 !s107 G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/seg7.vhd|
 R11
