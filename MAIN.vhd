@@ -62,7 +62,7 @@ bnt_wr: bnt_sincrono port map (ck,clr, wr, wr_out);
 bnt_rd: bnt_sincrono port map (ck,clr, rd, rd_out);
 
 ----------------------------------------------------------------------------------------------------------------------
----CORREÃƒâ€¡ÃƒÆ’O DO SINAL PARA OS DISPLAY DE 7 SEGMENTOS A FIM DE APAGAR OS SEGMENTOS
+---CORREcao DO SINAL PARA OS DISPLAY DE 7 SEGMENTOS A FIM DE APAGAR OS SEGMENTOS
 
 FFD_00: FFD port map(ck, clr, '0', rd_out,SETSEG_ON);  
 

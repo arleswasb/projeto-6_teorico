@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto_6
-Wed Dec 13 19:22:14 2023
+Thu Dec 14 18:32:00 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 13 19:22:14 2023           ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 14 18:32:00 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; projeto_6                                       ;
 ; Top-level Entity Name              ; MAIN                                            ;
@@ -246,8 +246,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
-; |MAIN                                  ; 197 (35)          ; 114 (0)      ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |MAIN                                                                                ; work         ;
-;    |FIFO:fifo00|                       ; 158 (0)           ; 109 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00                                                                    ; work         ;
+; |MAIN                                  ; 197 (34)          ; 114 (0)      ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |MAIN                                                                                ; work         ;
+;    |FIFO:fifo00|                       ; 159 (0)           ; 109 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00                                                                    ; work         ;
 ;       |Demux_1x16:DE_MUX00|            ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|Demux_1x16:DE_MUX00                                                ; work         ;
 ;       |Multiplexer16To1_16_BITS:MUX00| ; 65 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|Multiplexer16To1_16_BITS:MUX00                                     ; work         ;
 ;          |mux_2x1_16BITS:N4_00|        ; 65 (65)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|Multiplexer16To1_16_BITS:MUX00|mux_2x1_16BITS:N4_00                ; work         ;
@@ -371,7 +371,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |ffd:FFD_10|               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|REGISTRADOR_LD_16BITS:REG04|Registrador_16_bits:REG_00|ffd:FFD_10  ; work         ;
 ;             |ffd:FFD_11|               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|REGISTRADOR_LD_16BITS:REG04|Registrador_16_bits:REG_00|ffd:FFD_11  ; work         ;
 ;             |ffd:FFD_12|               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|REGISTRADOR_LD_16BITS:REG04|Registrador_16_bits:REG_00|ffd:FFD_12  ; work         ;
-;       |bin_bcd_16BITS:BIN_BCD|         ; 74 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD                                             ; work         ;
+;       |bin_bcd_16BITS:BIN_BCD|         ; 75 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD                                             ; work         ;
 ;          |ADD3:U11|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U11                                    ; work         ;
 ;          |ADD3:U12|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U12                                    ; work         ;
 ;          |ADD3:U14|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U14                                    ; work         ;
@@ -390,7 +390,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |ADD3:U31|                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U31                                    ; work         ;
 ;          |ADD3:U32|                    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U32                                    ; work         ;
 ;          |ADD3:U33|                    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U33                                    ; work         ;
-;          |ADD3:U34|                    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U34                                    ; work         ;
+;          |ADD3:U34|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U34                                    ; work         ;
 ;          |ADD3:U5|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U5                                     ; work         ;
 ;          |ADD3:U7|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U7                                     ; work         ;
 ;          |ADD3:U9|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U9                                     ; work         ;
@@ -588,13 +588,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
-; 8:1                ; 13 bits   ; 65 LEs        ; 65 LEs               ; 0 LEs                  ; No         ; |MAIN|FIFO:fifo00|Multiplexer16To1_16_BITS:MUX00|mux_2x1_16BITS:N4_00|O[10] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; 8:1                ; 13 bits   ; 65 LEs        ; 65 LEs               ; 0 LEs                  ; No         ; |MAIN|FIFO:fifo00|Multiplexer16To1_16_BITS:MUX00|mux_2x1_16BITS:N4_00|O[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 
 
 +----------------------------------------+
@@ -891,7 +891,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -901,7 +901,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Dec 13 19:22:09 2023
+    Info: Processing started: Thu Dec 14 18:31:52 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto_6 -c projeto_6
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ffjk.vhd
@@ -977,8 +977,8 @@ Info (21057): Implemented 351 device resources after synthesis - the final resou
     Info (21061): Implemented 304 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4653 megabytes
-    Info: Processing ended: Wed Dec 13 19:22:15 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Thu Dec 14 18:32:01 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:02
 
 
