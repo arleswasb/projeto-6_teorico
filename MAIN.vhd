@@ -32,6 +32,10 @@ component ffd is
                        q : out std_logic);
 end component;
 
+component ck_div is
+   port (ck_in : in  std_logic;
+         ck_out: out std_logic);
+end component;
 
 
 signal wr_out,rd_out : STD_LOGIC;
@@ -39,8 +43,14 @@ signal BCD : STD_LOGIC_VECTOR(15 downto 0);
 signal SW : STD_LOGIC_VECTOR(15 downto 0);
 signal disp3,disp2,disp1,disp0: std_logic_vector (6 downto 0);
 signal SETSEG_ON : STD_LOGIC;
+signal CLK_DIV : STD_LOGIC;
 
 begin
+
+----------------------------------------------------------------------------------------------------------------------
+ ---  DIVISOR DE CLOCK
+ 
+ CLOCK: ck_div PORT MAP (CK,CLK_DIV);
 
 ----------------------------------------------------------------------------------------------------------------------
 ---INCLUSAO DOS 4 BITS 0000 NO SINAL SW DE 16 BITS
@@ -50,7 +60,7 @@ SW <= '0' & '0' & '0' & SW_13(12 DOWNTO 0);
 ----------------------------------------------------------------------------------------------------------------------
 ---SAIDA DO SINAL PARA OS DISPLAY DE 7 SEGMENTOS
 
-fifo00: FIFO port map (SW,WR_OUT,RD_OUT,CLR,CK,BCD,EM,FU);
+fifo00: FIFO port map (SW,WR_OUT,RD_OUT,CLR,CLK_DIV,BCD,EM,FU);
 
 
 HEX03: seg7 PORT MAP (BCD(15 DOWNTO 12),HEX3);
@@ -58,8 +68,8 @@ HEX02: seg7 PORT MAP (BCD(11 DOWNTO 8),HEX2);
 HEX01: seg7 PORT MAP (BCD(7 DOWNTO 4),HEX1);
 HEX00: seg7 PORT MAP (BCD(3 DOWNTO 0),HEX0);
 
-bnt_wr: bnt_sincrono port map (ck,clr, wr, wr_out);
-bnt_rd: bnt_sincrono port map (ck,clr, rd, rd_out);
+bnt_wr: bnt_sincrono port map (CLK_DIV,clr, wr, wr_out);
+bnt_rd: bnt_sincrono port map (CLK_DIV,clr, rd, rd_out);
 
 
 end ckt;

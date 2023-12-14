@@ -14,9 +14,7 @@ SW_13[11] => FIFO:fifo00.SW[11]
 SW_13[12] => FIFO:fifo00.SW[12]
 WR => bnt_sincrono:bnt_wr.BTN
 RD => bnt_sincrono:bnt_rd.BTN
-CK => FIFO:fifo00.CK
-CK => bnt_sincrono:bnt_wr.clk
-CK => bnt_sincrono:bnt_rd.clk
+CK => ck_div:CLOCK.ck_in
 CLR => FIFO:fifo00.CLR
 CLR => bnt_sincrono:bnt_wr.clr
 CLR => bnt_sincrono:bnt_rd.clr
@@ -50,6 +48,35 @@ HEX3[3] <= seg7:HEX03.H[3]
 HEX3[4] <= seg7:HEX03.H[4]
 HEX3[5] <= seg7:HEX03.H[5]
 HEX3[6] <= seg7:HEX03.H[6]
+
+
+|MAIN|ck_div:CLOCK
+ck_in => ax.CLK
+ck_in => cnt[0].CLK
+ck_in => cnt[1].CLK
+ck_in => cnt[2].CLK
+ck_in => cnt[3].CLK
+ck_in => cnt[4].CLK
+ck_in => cnt[5].CLK
+ck_in => cnt[6].CLK
+ck_in => cnt[7].CLK
+ck_in => cnt[8].CLK
+ck_in => cnt[9].CLK
+ck_in => cnt[10].CLK
+ck_in => cnt[11].CLK
+ck_in => cnt[12].CLK
+ck_in => cnt[13].CLK
+ck_in => cnt[14].CLK
+ck_in => cnt[15].CLK
+ck_in => cnt[16].CLK
+ck_in => cnt[17].CLK
+ck_in => cnt[18].CLK
+ck_in => cnt[19].CLK
+ck_in => cnt[20].CLK
+ck_in => cnt[21].CLK
+ck_in => cnt[22].CLK
+ck_in => cnt[23].CLK
+ck_out <= ax.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MAIN|FIFO:fifo00

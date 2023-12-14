@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto_6
-Thu Dec 14 18:39:07 2023
+Thu Dec 14 18:46:53 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -74,15 +74,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 14 18:39:07 2023           ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 14 18:46:53 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; projeto_6                                       ;
 ; Top-level Entity Name              ; MAIN                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 302                                             ;
-;     Total combinational functions  ; 196                                             ;
-;     Dedicated logic registers      ; 113                                             ;
-; Total registers                    ; 113                                             ;
+; Total logic elements               ; 349                                             ;
+;     Total combinational functions  ; 243                                             ;
+;     Dedicated logic registers      ; 138                                             ;
+; Total registers                    ; 138                                             ;
 ; Total pins                         ; 47                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -207,37 +207,38 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; FIFO.vhd                         ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/FIFO.vhd                     ;         ;
 ; MAIN.vhd                         ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MAIN.vhd                     ;         ;
 ; bnt_sincrono.vhd                 ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bnt_sincrono.vhd             ;         ;
+; ck_div.vhd                       ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ck_div.vhd                   ;         ;
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 302   ;
-;                                             ;       ;
-; Total combinational functions               ; 196   ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 148   ;
-;     -- 3 input functions                    ; 42    ;
-;     -- <=2 input functions                  ; 6     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 196   ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 113   ;
-;     -- Dedicated logic registers            ; 113   ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 47    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; CK    ;
-; Maximum fan-out                             ; 113   ;
-; Total fan-out                               ; 1201  ;
-; Average fan-out                             ; 3.37  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 349             ;
+;                                             ;                 ;
+; Total combinational functions               ; 243             ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 171             ;
+;     -- 3 input functions                    ; 42              ;
+;     -- <=2 input functions                  ; 30              ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 220             ;
+;     -- arithmetic mode                      ; 23              ;
+;                                             ;                 ;
+; Total registers                             ; 138             ;
+;     -- Dedicated logic registers            ; 138             ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 47              ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+; Maximum fan-out node                        ; ck_div:CLOCK|ax ;
+; Maximum fan-out                             ; 114             ;
+; Total fan-out                               ; 1390            ;
+; Average fan-out                             ; 3.25            ;
++---------------------------------------------+-----------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -245,7 +246,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
-; |MAIN                                  ; 196 (0)           ; 113 (0)      ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |MAIN                                                                                ; work         ;
+; |MAIN                                  ; 243 (0)           ; 138 (0)      ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |MAIN                                                                                ; work         ;
 ;    |FIFO:fifo00|                       ; 165 (0)           ; 109 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00                                                                    ; work         ;
 ;       |Demux_1x16:DE_MUX00|            ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|Demux_1x16:DE_MUX00                                                ; work         ;
 ;       |Multiplexer16To1_16_BITS:MUX00| ; 65 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|Multiplexer16To1_16_BITS:MUX00                                     ; work         ;
@@ -408,6 +409,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |bnt_sincrono:bnt_wr|               ; 1 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|bnt_sincrono:bnt_wr                                                            ; work         ;
 ;       |ffd:FFD1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|bnt_sincrono:bnt_wr|ffd:FFD1                                                   ; work         ;
 ;       |ffd:FFD2|                       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|bnt_sincrono:bnt_wr|ffd:FFD2                                                   ; work         ;
+;    |ck_div:CLOCK|                      ; 47 (47)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|ck_div:CLOCK                                                                   ; work         ;
 ;    |seg7:HEX00|                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|seg7:HEX00                                                                     ; work         ;
 ;    |seg7:HEX01|                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|seg7:HEX01                                                                     ; work         ;
 ;    |seg7:HEX02|                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|seg7:HEX02                                                                     ; work         ;
@@ -582,7 +584,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 113   ;
+; Total registers                              ; 138   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 113   ;
@@ -592,13 +594,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-; 8:1                ; 13 bits   ; 65 LEs        ; 65 LEs               ; 0 LEs                  ; No         ; |MAIN|FIFO:fifo00|Multiplexer16To1_16_BITS:MUX00|mux_2x1_16BITS:N4_00|O[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; 8:1                ; 13 bits   ; 65 LEs        ; 65 LEs               ; 0 LEs                  ; No         ; |MAIN|FIFO:fifo00|Multiplexer16To1_16_BITS:MUX00|mux_2x1_16BITS:N4_00|O[10] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------+
@@ -896,7 +898,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Dec 14 18:39:02 2023
+    Info: Processing started: Thu Dec 14 18:46:47 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto_6 -c projeto_6
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ffjk.vhd
@@ -947,7 +949,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file main.vh
 Info (12021): Found 2 design units, including 1 entities, in source file bnt_sincrono.vhd
     Info (12022): Found design unit 1: bnt_sincrono-ckt
     Info (12023): Found entity 1: bnt_sincrono
+Info (12021): Found 2 design units, including 1 entities, in source file ck_div.vhd
+    Info (12022): Found design unit 1: ck_div-logica
+    Info (12023): Found entity 1: ck_div
 Info (12127): Elaborating entity "MAIN" for the top level hierarchy
+Info (12128): Elaborating entity "ck_div" for hierarchy "ck_div:CLOCK"
 Info (12128): Elaborating entity "FIFO" for hierarchy "FIFO:fifo00"
 Info (12128): Elaborating entity "contador_up_dw_4_bits" for hierarchy "FIFO:fifo00|contador_up_dw_4_bits:PONT"
 Warning (10036): Verilog HDL or VHDL warning at contador_up_dw_4_bits.vhd(35): object "FFJK0" assigned a value but never read
@@ -966,14 +972,14 @@ Info (12128): Elaborating entity "bnt_sincrono" for hierarchy "bnt_sincrono:bnt_
 Info (17049): 104 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 349 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 396 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 30 output pins
-    Info (21061): Implemented 302 logic cells
+    Info (21061): Implemented 349 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4653 megabytes
-    Info: Processing ended: Thu Dec 14 18:39:07 2023
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Thu Dec 14 18:46:53 2023
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:02
 
 
