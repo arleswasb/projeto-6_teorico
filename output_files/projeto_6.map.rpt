@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto_6
-Thu Dec 14 18:32:00 2023
+Thu Dec 14 18:39:07 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,40 +16,39 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "ffd:FFD_00"
- 12. Port Connectivity Checks: "bnt_sincrono:bnt_wr|ffd:FFD2"
- 13. Port Connectivity Checks: "bnt_sincrono:bnt_wr|ffd:FFD1"
- 14. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U31"
- 15. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U27"
- 16. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U23"
- 17. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U19"
- 18. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U10"
- 19. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U4"
- 20. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U1"
- 21. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_15"
- 22. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_14"
- 23. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_13"
- 24. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_12"
- 25. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_11"
- 26. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_10"
- 27. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_09"
- 28. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_08"
- 29. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_07"
- 30. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_06"
- 31. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_05"
- 32. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_04"
- 33. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_03"
- 34. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_02"
- 35. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_01"
- 36. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_00"
- 37. Port Connectivity Checks: "FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4"
- 38. Port Connectivity Checks: "FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3"
- 39. Port Connectivity Checks: "FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2"
- 40. Port Connectivity Checks: "FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1"
- 41. Port Connectivity Checks: "FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0"
- 42. Port Connectivity Checks: "FIFO:fifo00"
- 43. Elapsed Time Per Partition
- 44. Analysis & Synthesis Messages
+ 11. Port Connectivity Checks: "bnt_sincrono:bnt_wr|ffd:FFD2"
+ 12. Port Connectivity Checks: "bnt_sincrono:bnt_wr|ffd:FFD1"
+ 13. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U31"
+ 14. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U27"
+ 15. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U23"
+ 16. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U19"
+ 17. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U10"
+ 18. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U4"
+ 19. Port Connectivity Checks: "FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U1"
+ 20. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_15"
+ 21. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_14"
+ 22. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_13"
+ 23. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_12"
+ 24. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_11"
+ 25. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_10"
+ 26. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_09"
+ 27. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_08"
+ 28. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_07"
+ 29. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_06"
+ 30. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_05"
+ 31. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_04"
+ 32. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_03"
+ 33. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_02"
+ 34. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_01"
+ 35. Port Connectivity Checks: "FIFO:fifo00|REGISTRADOR_LD_16BITS:REG01|Registrador_16_bits:REG_00|ffd:FFD_00"
+ 36. Port Connectivity Checks: "FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4"
+ 37. Port Connectivity Checks: "FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF3"
+ 38. Port Connectivity Checks: "FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF2"
+ 39. Port Connectivity Checks: "FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1"
+ 40. Port Connectivity Checks: "FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0"
+ 41. Port Connectivity Checks: "FIFO:fifo00"
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
 
 
 
@@ -75,15 +74,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 14 18:32:00 2023           ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 14 18:39:07 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; projeto_6                                       ;
 ; Top-level Entity Name              ; MAIN                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 303                                             ;
-;     Total combinational functions  ; 197                                             ;
-;     Dedicated logic registers      ; 114                                             ;
-; Total registers                    ; 114                                             ;
+; Total logic elements               ; 302                                             ;
+;     Total combinational functions  ; 196                                             ;
+;     Dedicated logic registers      ; 113                                             ;
+; Total registers                    ; 113                                             ;
 ; Total pins                         ; 47                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -216,28 +215,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 303   ;
+; Estimated Total logic elements              ; 302   ;
 ;                                             ;       ;
-; Total combinational functions               ; 197   ;
+; Total combinational functions               ; 196   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 161   ;
-;     -- 3 input functions                    ; 28    ;
-;     -- <=2 input functions                  ; 8     ;
+;     -- 4 input functions                    ; 148   ;
+;     -- 3 input functions                    ; 42    ;
+;     -- <=2 input functions                  ; 6     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 197   ;
+;     -- normal mode                          ; 196   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 114   ;
-;     -- Dedicated logic registers            ; 114   ;
+; Total registers                             ; 113   ;
+;     -- Dedicated logic registers            ; 113   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 47    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CK    ;
-; Maximum fan-out                             ; 114   ;
-; Total fan-out                               ; 1218  ;
-; Average fan-out                             ; 3.40  ;
+; Maximum fan-out                             ; 113   ;
+; Total fan-out                               ; 1201  ;
+; Average fan-out                             ; 3.37  ;
 +---------------------------------------------+-------+
 
 
@@ -246,8 +245,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
-; |MAIN                                  ; 197 (34)          ; 114 (0)      ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |MAIN                                                                                ; work         ;
-;    |FIFO:fifo00|                       ; 159 (0)           ; 109 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00                                                                    ; work         ;
+; |MAIN                                  ; 196 (0)           ; 113 (0)      ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |MAIN                                                                                ; work         ;
+;    |FIFO:fifo00|                       ; 165 (0)           ; 109 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00                                                                    ; work         ;
 ;       |Demux_1x16:DE_MUX00|            ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|Demux_1x16:DE_MUX00                                                ; work         ;
 ;       |Multiplexer16To1_16_BITS:MUX00| ; 65 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|Multiplexer16To1_16_BITS:MUX00                                     ; work         ;
 ;          |mux_2x1_16BITS:N4_00|        ; 65 (65)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|Multiplexer16To1_16_BITS:MUX00|mux_2x1_16BITS:N4_00                ; work         ;
@@ -371,7 +370,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |ffd:FFD_10|               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|REGISTRADOR_LD_16BITS:REG04|Registrador_16_bits:REG_00|ffd:FFD_10  ; work         ;
 ;             |ffd:FFD_11|               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|REGISTRADOR_LD_16BITS:REG04|Registrador_16_bits:REG_00|ffd:FFD_11  ; work         ;
 ;             |ffd:FFD_12|               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|REGISTRADOR_LD_16BITS:REG04|Registrador_16_bits:REG_00|ffd:FFD_12  ; work         ;
-;       |bin_bcd_16BITS:BIN_BCD|         ; 75 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD                                             ; work         ;
+;       |bin_bcd_16BITS:BIN_BCD|         ; 78 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD                                             ; work         ;
 ;          |ADD3:U11|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U11                                    ; work         ;
 ;          |ADD3:U12|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U12                                    ; work         ;
 ;          |ADD3:U14|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U14                                    ; work         ;
@@ -387,15 +386,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |ADD3:U28|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U28                                    ; work         ;
 ;          |ADD3:U29|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U29                                    ; work         ;
 ;          |ADD3:U30|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U30                                    ; work         ;
-;          |ADD3:U31|                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U31                                    ; work         ;
-;          |ADD3:U32|                    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U32                                    ; work         ;
-;          |ADD3:U33|                    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U33                                    ; work         ;
+;          |ADD3:U31|                    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U31                                    ; work         ;
+;          |ADD3:U32|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U32                                    ; work         ;
+;          |ADD3:U33|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U33                                    ; work         ;
 ;          |ADD3:U34|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U34                                    ; work         ;
 ;          |ADD3:U5|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U5                                     ; work         ;
 ;          |ADD3:U7|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U7                                     ; work         ;
 ;          |ADD3:U9|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|bin_bcd_16BITS:BIN_BCD|ADD3:U9                                     ; work         ;
-;       |contador_up_dw_4_bits:PONT|     ; 8 (3)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|contador_up_dw_4_bits:PONT                                         ; work         ;
+;       |contador_up_dw_4_bits:PONT|     ; 11 (4)            ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|contador_up_dw_4_bits:PONT                                         ; work         ;
 ;          |MUX_1bit:mux_ffd_1|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|contador_up_dw_4_bits:PONT|MUX_1bit:mux_ffd_1                      ; work         ;
+;          |MUX_1bit:mux_ffjk_1|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|contador_up_dw_4_bits:PONT|MUX_1bit:mux_ffjk_1                     ; work         ;
+;          |MUX_1bit:mux_ffjk_2|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|contador_up_dw_4_bits:PONT|MUX_1bit:mux_ffjk_2                     ; work         ;
 ;          |ffd:FF4|                     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|contador_up_dw_4_bits:PONT|ffd:FF4                                 ; work         ;
 ;          |ffjk:FF0|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF0                                ; work         ;
 ;          |ffjk:FF1|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|FIFO:fifo00|contador_up_dw_4_bits:PONT|ffjk:FF1                                ; work         ;
@@ -404,10 +405,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |bnt_sincrono:bnt_rd|               ; 2 (1)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|bnt_sincrono:bnt_rd                                                            ; work         ;
 ;       |ffd:FFD1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|bnt_sincrono:bnt_rd|ffd:FFD1                                                   ; work         ;
 ;       |ffd:FFD2|                       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|bnt_sincrono:bnt_rd|ffd:FFD2                                                   ; work         ;
-;    |bnt_sincrono:bnt_wr|               ; 2 (1)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|bnt_sincrono:bnt_wr                                                            ; work         ;
+;    |bnt_sincrono:bnt_wr|               ; 1 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|bnt_sincrono:bnt_wr                                                            ; work         ;
 ;       |ffd:FFD1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|bnt_sincrono:bnt_wr|ffd:FFD1                                                   ; work         ;
 ;       |ffd:FFD2|                       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|bnt_sincrono:bnt_wr|ffd:FFD2                                                   ; work         ;
-;    |ffd:FFD_00|                        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|ffd:FFD_00                                                                     ; work         ;
+;    |seg7:HEX00|                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|seg7:HEX00                                                                     ; work         ;
+;    |seg7:HEX01|                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|seg7:HEX01                                                                     ; work         ;
+;    |seg7:HEX02|                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|seg7:HEX02                                                                     ; work         ;
+;    |seg7:HEX03|                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|seg7:HEX03                                                                     ; work         ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -578,10 +582,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 114   ;
+; Total registers                              ; 113   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 114   ;
+; Number of registers using Asynchronous Clear ; 113   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 104   ;
 ; Number of registers using Preset             ; 0     ;
@@ -595,15 +599,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 ; 8:1                ; 13 bits   ; 65 LEs        ; 65 LEs               ; 0 LEs                  ; No         ; |MAIN|FIFO:fifo00|Multiplexer16To1_16_BITS:MUX00|mux_2x1_16BITS:N4_00|O[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-
-
-+----------------------------------------+
-; Port Connectivity Checks: "ffd:FFD_00" ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; set  ; Input ; Info     ; Stuck at GND ;
-+------+-------+----------+--------------+
 
 
 +----------------------------------------------------------+
@@ -891,7 +886,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -901,7 +896,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Dec 14 18:31:52 2023
+    Info: Processing started: Thu Dec 14 18:39:02 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto_6 -c projeto_6
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ffjk.vhd
@@ -971,14 +966,14 @@ Info (12128): Elaborating entity "bnt_sincrono" for hierarchy "bnt_sincrono:bnt_
 Info (17049): 104 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 351 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 349 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 30 output pins
-    Info (21061): Implemented 304 logic cells
+    Info (21061): Implemented 302 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4653 megabytes
-    Info: Processing ended: Thu Dec 14 18:32:01 2023
-    Info: Elapsed time: 00:00:09
+    Info: Processing ended: Thu Dec 14 18:39:07 2023
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:02
 
 
