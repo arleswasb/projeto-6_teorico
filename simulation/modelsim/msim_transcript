@@ -87,7 +87,6 @@
 # -- Loading package std_logic_1164
 # -- Compiling entity Multiplexer16To1_16_BITS
 # -- Compiling architecture Main of Multiplexer16To1_16_BITS
-# Load canceled
 # vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/Demux_1x16.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -116,6 +115,13 @@
 # -- Loading package std_logic_1164
 # -- Compiling entity bnt_sincrono
 # -- Compiling architecture ckt of bnt_sincrono
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ck_div.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ck_div
+# -- Compiling architecture logica of ck_div
 # 
 vsim +altera -do projeto_6_run_msim_rtl_vhdl.do -l msim_transcript -gui work.main
 # vsim +altera -do projeto_6_run_msim_rtl_vhdl.do -l msim_transcript -gui work.main 
@@ -123,6 +129,7 @@ vsim +altera -do projeto_6_run_msim_rtl_vhdl.do -l msim_transcript -gui work.mai
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.main(ckt)
+# Loading work.ck_div(logica)
 # Loading work.fifo(ckt)
 # Loading work.contador_up_dw_4_bits(ckt)
 # Loading work.ffjk(logica)
@@ -137,7 +144,7 @@ vsim +altera -do projeto_6_run_msim_rtl_vhdl.do -l msim_transcript -gui work.mai
 # Loading work.add3(ckt)
 # Loading work.seg7(ckt)
 # Loading work.bnt_sincrono(ckt)
-# ** Warning: Design size of 394 instances exceeds ModelSim ALTERA recommended capacity.
+# ** Warning: Design size of 396 instances exceeds ModelSim ALTERA recommended capacity.
 # This may because you are loading cell libraries which are not recommended with
 # the ModelSim Altera version. Expect performance to be adversely affected.
 # do projeto_6_run_msim_rtl_vhdl.do 
@@ -146,6 +153,7 @@ vsim +altera -do projeto_6_run_msim_rtl_vhdl.do -l msim_transcript -gui work.mai
 # }
 # vlib rtl_work
 # vmap work rtl_work
+add wave -position insertpoint sim:/main/*
 # Modifying modelsim.ini
 # 
 # vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ffjk.vhd}
@@ -253,10 +261,19 @@ vsim +altera -do projeto_6_run_msim_rtl_vhdl.do -l msim_transcript -gui work.mai
 # -- Loading package std_logic_1164
 # -- Compiling entity bnt_sincrono
 # -- Compiling architecture ckt of bnt_sincrono
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ck_div.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ck_div
+# -- Compiling architecture logica of ck_div
 # 
+add wave -position insertpoint sim:/main/fifo00/*
 add wave -position insertpoint sim:/main/*
 add wave -position insertpoint sim:/main/fifo00/*
-force -freeze sim:/main/SW_13 0101010101010 0
+force -freeze sim:/main/SW_13 0000000000001 0
+force -freeze sim:/main/SW_13 0000000000001 0
 force -freeze sim:/main/WR 0 0
 force -freeze sim:/main/RD 0 0
 force -freeze sim:/main/CK 1 0, 0 {15 ps} -r 30
@@ -266,79 +283,110 @@ force -freeze sim:/main/CLR 0 0
 force -freeze sim:/main/WR 1 0
 run
 run
-force -freeze sim:/main/WR 0 0
-force -freeze sim:/main/SW_13 0101010101111 0
-run
-force -freeze sim:/main/WR 1 0
-run
-run
+force -freeze sim:/main/SW_13 0000000000011 0
 force -freeze sim:/main/WR 0 0
 run
 force -freeze sim:/main/WR 1 0
 run
-run
 force -freeze sim:/main/WR 0 0
 run
-run
-restart -f
-# Loading work.main(ckt)
-# Loading work.fifo(ckt)
-# Loading work.contador_up_dw_4_bits(ckt)
-# Loading work.ffjk(logica)
-# Loading work.mux_1bit(main)
-# Loading work.ffd(logica)
-# Loading work.demux_1x16(ckt)
-# Loading work.multiplexer16to1_16_bits(main)
-# Loading work.mux_2x1_16bits(ckt)
-# Loading work.registrador_ld_16bits(ckt)
-# Loading work.registrador_16_bits(ckt)
-# Loading work.bin_bcd_16bits(ckt)
-# Loading work.add3(ckt)
-# Loading work.seg7(ckt)
-# Loading work.bnt_sincrono(ckt)
-# ** Warning: Design size of 394 instances exceeds ModelSim ALTERA recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim Altera version. Expect performance to be adversely affected.
-force -freeze sim:/main/SW_13 1010101010101 0
-force -freeze sim:/main/WR 0 0
-force -freeze sim:/main/RD 0 0
-force -freeze sim:/main/CK 1 0, 0 {15 ps} -r 30
-force -freeze sim:/main/CLR 1 0
-force -freeze sim:/main/CK 1 0, 0 {15 ps} -r 30
-run
-force -freeze sim:/main/CLR 0 0
-run
+force -freeze sim:/main/SW_13 0000000000010 0
 force -freeze sim:/main/WR 1 0
 run
-run
 force -freeze sim:/main/WR 0 0
-force -freeze sim:/main/SW_13 1010101011111 0
 run
+run
+force -freeze sim:/main/SW_13 0000000000100 0
 force -freeze sim:/main/WR 1 0
 run
-run
 force -freeze sim:/main/WR 0 0
 run
 run
-force -freeze sim:/main/SW_13 1010101010000 0
+force -freeze sim:/main/SW_13 0000000000101 0
 force -freeze sim:/main/WR 1 0
 run
+force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW_13 0000000000110 0
+force -freeze sim:/main/WR 1 0
 run
 force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW_13 0000000000111 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW_13 0000000001000 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW_13 0000000001001 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW_13 0000000001010 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW_13 0000000001011 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW_13 0000000001100 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW_13 0000000001101 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW_13 0000000001110 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW_13 0000000001111 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+run
+force -freeze sim:/main/SW_13 0000000010000 0
+force -freeze sim:/main/WR 1 0
+run
+force -freeze sim:/main/WR 0 0
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/simulation/modelsim/wave.do}
+# save: cannot open file "G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/simulation/modelsim/wave.do": no such file or directory
+run
+run
 run
 force -freeze sim:/main/RD 1 0
 run
-run
 force -freeze sim:/main/RD 0 0
 run
 force -freeze sim:/main/RD 1 0
 run
-run
 force -freeze sim:/main/RD 0 0
 run
-run
 force -freeze sim:/main/RD 1 0
-run
 run
 force -freeze sim:/main/RD 0 0
 run

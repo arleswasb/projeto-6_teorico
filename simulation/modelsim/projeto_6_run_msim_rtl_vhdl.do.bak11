@@ -20,4 +20,5 @@ vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementa
 vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/FIFO.vhd}
 vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/MAIN.vhd}
 vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/bnt_sincrono.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/TEORIA/PROJETO6/implementação/projeto 6_teorico/ck_div.vhd}
 
